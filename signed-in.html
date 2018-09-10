@@ -1,0 +1,921 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yorso</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/new-style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <link href="css/new-media.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--фиксированное меню-->
+    <div class="head-menu fixed-menu">
+        <!--регионы-->
+        <section class="regions">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="flex-pick-region">
+                            <p class="pick-text">Выберите вашу страну или регион, чтобы контент и товары соответствовали вашему местоположению.</p>
+                            <div class="right-side">
+                                <div class="form-pick-region">
+                                    <div class="picked-country">
+                                        <p style="background-image: url(img/RU-flag.svg)">Россия</p>
+                                    </div>
+                                    <div class="dropdown-region">
+                                        <div class="dropdown-region-item">
+                                            <a href="#" class="other-regions" style="background-image: url(img/all-country.svg)">Выберите страну</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="continue" type="button">Продолжить</button>
+                            </div>
+                            <button type="button" class="close-region"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/регионы-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex-menu">
+                        <div class="left-side">
+                            <a class="logo-wr" href="#">
+                                <img src="img/logo-black.svg" class="img-respinsive" alt="">
+                            </a>
+                            <div class="mid-side hidden-lg hidden-md">
+                                <form class="search-form">
+                                    <input type="text" placeholder="Я ищу...">
+                                    <button type="submit"></button>
+                                </form>
+                            </div>
+                            <a href="#" class="tel-number">+7 (499) 703-32-24</a>
+                            <button type="button" class="call">Обратный звонок</button>
+                        </div>
+                        <div class="mid-side hidden-sm hidden-xs">
+                            <form class="search-form">
+                                <input type="text" placeholder="Я ищу...">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                        <div class="right-side">
+                            <div class="mid-side hidden-lg hidden-md">
+                                <ul class="menu-list">
+                                    <li class="first-itm">
+                                        <a class="for-js-code" href="#">Как это работает</a>
+                                    </li>
+                                    <li class="first-itm">
+                                        <a class="for-js-code" href="#">Покупателям</a>
+                                    </li>
+                                    <li class="first-itm">
+                                        <a class="for-js-code" href="#">Поставщикам</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="other-links-wr">
+                                <!--добавляем класс active для другого стиля-->
+                                <a href="#" class="profile active other-links">Dmitry M.</a>
+                                <div class="count">
+                                    <span>3</span>
+                                </div>
+                                <div class="hover-wr-list">
+                                    <ul class="hidden-list">
+                                        <li>
+                                            <a href="#">ЗАКАЗЫ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">НАСТРОЙКИ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">АДМИНИСТРИРОВАНИЕ</a>    
+                                        </li>
+                                         <li>
+                                            <a href="#">ЗАЙТИ ПОД СВОИМ ПОЛЬЗОВАТЕЛЕМ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">МЕНЕДЖЕР ПО ПРОДАЖАМ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">ЛОГИСT</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">SEO МЕНЕДЖЕР</a>    
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--нотификации-->
+                            <div class="notifications-wrapp">
+                                <div class="icon">
+                                    <img src="img/notif.svg" class="img-responsive" alt="">
+                                </div>
+                                <div class="dropdown-notifications">
+                                    <div class="head-notif">
+                                        <p>Уведомления</p>
+                                        <ul>
+                                            <li>
+                                                <span>Отметить все как прочитанные</span>
+                                            </li>
+                                            <li>
+                                                <a href="#">Настройки</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="body-notif">
+                                        <li>
+                                            <div class="left-icon">
+                                                <span>1</span>
+                                            </div>
+                                            <div class="notif-text">
+                                                <a href="#">Новый документ в заказе #122</a>
+                                                <p>Только что</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="left-icon">
+                                                <span>2</span>
+                                            </div>
+                                            <div class="notif-text">
+                                                <span>Новый документ в заказе #122</span>
+                                                <p>Только что</p>
+                                            </div>
+                                        </li>
+                                    
+                                    </ul>
+                                    <div class="look-more">
+                                        <a href="#">Смотреть все уведомления</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/нотификации-->
+                            <div class="other-links-wr">
+                                <a href="#" class="basket other-links">Корзина</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!--регионы-->
+    <section class="regions">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex-pick-region">
+                        <p class="pick-text">Выберите вашу страну или регион, чтобы контент и товары соответствовали вашему местоположению.</p>
+                        <div class="right-side">
+                            <div class="form-pick-region">
+                                <div class="picked-country">
+                                    <p style="background-image: url(img/RU-flag.svg)">Россия</p>
+                                </div>
+                                <div class="dropdown-region">
+                                    <div class="dropdown-region-item">
+                                        <a href="#" class="other-regions" style="background-image: url(img/all-country.svg)">Выберите страну</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="continue" type="button">Продолжить</button>
+                        </div>
+                        <button type="button" class="close-region"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/регионы-->
+    <!--куки-->
+    <section class="cookies-wrapp">
+        <div class="cookies-contant">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="relative-wr">
+                            <div class="m-w-cookes">
+                                <p class="policy">Напоминание о конфедициальности</p>
+                                <div class="butt-groupe">
+                                    <button class="later" type="button">Напомнить позже</button>
+                                    <a class="read" href="#">Прочитать</a>
+                                </div>
+                                <button type="button" class="close-cookie close-x"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--куки-->
+    <!--алерты-->
+    <div class="alerts alert-green-style" style="display: none;">
+        <div class="relative-wrapp">
+            <div class="icon"></div>
+            <p>E-mail was successfully confirmed</p>
+            <button type="button" class="close-alert"></button>
+        </div>
+    </div>
+    <div class="alerts alert-green-style left-position">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="relative-wrapp">
+                        <div class="icon"></div>
+                        <p>E-mail was successfully confirmed and filled with <a href="#">delicious donuts</a></p>
+                        <button type="button" class="close-alert"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="alerts alert-red-style" style="display: none;">
+        <div class="relative-wrapp">
+            <div class="icon"></div>
+            <p>E-mail was not verified</p>
+            <button type="button" class="close-alert"></button>
+        </div>
+    </div>
+    <div class="alerts alert-blue-style">
+        <div class="relative-wrapp">
+            <div class="icon"></div>
+            <p>Check your account for more</p>
+            <button type="button" class="close-alert"></button>
+        </div>
+    </div>
+    <!--/алерты-->
+    
+    <section class="all-content">
+        <div class="for-flex-height">
+            <!--статичное меню-->
+            <div class="head-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="flex-menu">
+                                <div class="left-side">
+                                    <a class="logo-wr" href="#">
+                                        <img src="img/logo-blue.svg" class="img-respinsive" alt="">
+                                    </a>
+                                    <a href="#" class="tel-number">+7 (499) 703-32-24</a>
+                                    <button type="button" class="call">Обратный звонок</button>
+                                </div>
+                                <div class="mid-side">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fixed-menu">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="fixed-menu">
+                                        <ul class="menu-list">
+                                            <li class="first-itm">
+                                                <a class="for-js-code" href="#">Как это работает</a>
+                                            </li>
+                                            <li class="first-itm">
+                                                <a class="for-js-code" href="#">Покупателям</a>
+                                            </li>
+                                            <li class="first-itm">
+                                                <a class="for-js-code" href="#">Поставщикам</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    
+                                    <div class="other-links-wr">
+                                       
+                                        <div class="hover-wr-list">
+                                            <ul class="hidden-list">
+                                                <li>
+                                                    <a href="#">ЗАКАЗЫ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">НАСТРОЙКИ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">АДМИНИСТРИРОВАНИЕ</a>    
+                                                </li>
+                                                 <li>
+                                                    <a href="#">ЗАЙТИ ПОД СВОИМ ПОЛЬЗОВАТЕЛЕМ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">МЕНЕДЖЕР ПО ПРОДАЖАМ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">ЛОГИСT</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">SEO МЕНЕДЖЕР</a>    
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="other-links-wr">
+                                        <a href="#" class="profile active other-links">Dmitry M.</a>
+                                        <div class="count">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="hover-wr-list">
+                                            <ul class="hidden-list">
+                                                <li>
+                                                    <a href="#">ЗАКАЗЫ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">НАСТРОЙКИ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">АДМИНИСТРИРОВАНИЕ</a>    
+                                                </li>
+                                                 <li>
+                                                    <a href="#">ЗАЙТИ ПОД СВОИМ ПОЛЬЗОВАТЕЛЕМ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">МЕНЕДЖЕР ПО ПРОДАЖАМ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">ЛОГИСT</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">SEO МЕНЕДЖЕР</a>    
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--нотификации-->
+                                    <div class="notifications-wrapp">
+                                        <div class="icon">
+                                            <img src="img/notif.svg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="dropdown-notifications">
+                                            <div class="head-notif">
+                                                <p>Уведомления</p>
+                                                <ul>
+                                                    <li>
+                                                        <span>Отметить все как прочитанные</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Настройки</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <ul class="body-notif">
+                                                <li>
+                                                    <div class="left-icon">
+                                                        <span>1</span>
+                                                    </div>
+                                                    <div class="notif-text">
+                                                        <a href="#">Новый документ в заказе #122</a>
+                                                        <p>Только что</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left-icon">
+                                                        <span>2</span>
+                                                    </div>
+                                                    <div class="notif-text">
+                                                        <span>Новый документ в заказе #122</span>
+                                                        <p>Только что</p>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            <div class="look-more">
+                                                <a href="#">Смотреть все уведомления</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/нотификации-->
+                                    <div class="other-links-wr">
+                                        <a href="#" class="basket other-links">Корзина</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-baner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Торгуй без посредников<br> на b2b рынке рыбы и морепродуктов</h1>
+                            <p>Проверенные компании. Заявленное качество. Лучшие цены на рынке.</p>
+                            <form>
+                                <input class="form-field" type="text" placeholder="Я ищу...">
+                                <button type="submit">Найти</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="sec-lvl-3">
+                <div class="top-marg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6">
+                                <div class="shadow-wr">
+                                    <div class="top-cover-wr">
+                                        <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                    </div>
+                                    <div class="descr">
+                                        <div class="top-descr">
+                                            <a href="#">Сардинелла, тушка, см, 80-140г, 1/10</a>
+                                            <p class="some-info">Amblygaster sirm</p>
+                                            <p class="some-info">Россия</p>
+                                        </div>
+                                        <div class="bott-descr">
+                                            <div class="butt-1">
+                                                <span>360$ </span>/ кг
+                                            </div>
+                                            <p class="some-info">партия от 255 000 кг</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="shadow-wr">
+                                    <div class="top-cover-wr">
+                                        <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                    </div>
+                                    <div class="descr">
+                                        <div class="top-descr">
+                                            <a href="#">Сардинелла, тушка, см, 80-140г, 1/10</a>
+                                            <p class="some-info">Amblygaster sirm</p>
+                                            <p class="some-info">Россия</p>
+                                        </div>
+                                        <div class="bott-descr">
+                                            <div class="butt-1">
+                                                <span>360$ </span>/ кг
+                                            </div>
+                                            <p class="some-info">партия от 255 000 кг</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="shadow-wr">
+                                    <div class="top-cover-wr">
+                                        <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                    </div>
+                                    <div class="descr">
+                                        <div class="top-descr">
+                                            <a href="#">Сардинелла, тушка</a>
+                                            <p class="some-info">Amblygaster sirm</p>
+                                            <p class="some-info">Россия</p>
+                                        </div>
+                                        <div class="bott-descr">
+                                            <div class="butt-1">
+                                                <span>360$ </span>/ кг
+                                            </div>
+                                            <p class="some-info">партия от 255 000 кг</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="shadow-wr">
+                                    <div class="top-cover-wr">
+                                        <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                    </div>
+                                    <div class="descr">
+                                        <div class="top-descr">
+                                            <a href="#">Сардинелла, тушка, см, 80-140г, 1/10</a>
+                                            <p class="some-info">Amblygaster sirm</p>
+                                            <p class="some-info">Россия</p>
+                                        </div>
+                                        <div class="bott-descr">
+                                            <div class="butt-1">
+                                                <span>360$ </span>/ кг
+                                            </div>
+                                            <p class="some-info">партия от 255 000 кг</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-lvl-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Как устроен Yorso</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="wrapp-how-works">
+                                <div class="icon">
+                                    <img src="img/how-works-1.svg" class="img-responsive" alt="">
+                                </div>
+                                <p>Зарегистрируйтесь<br> на площадке</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="wrapp-how-works">
+                                <div class="icon">
+                                    <img src="img/how-works-2.svg" class="img-responsive" alt="">
+                                </div>
+                                <p>Разместите заказ<br> или товар</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="wrapp-how-works">
+                                <div class="icon">
+                                    <img src="img/how-works-3.svg" class="img-responsive" alt="">
+                                </div>
+                                <p>Договоритесь о сделке<br> при помощи сервисов Yorso</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="wrapp-how-works">
+                                <div class="icon">
+                                    <img src="img/how-works-4.svg" class="img-responsive" alt="">
+                                </div>
+                                <p>Дождитесь получения<br> или отправки товара</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="flex-block-links">
+                                <div class="side side-1">
+                                    <div class="shadow-wr-l">
+                                        <div class="icon">
+                                            <img src="img/some-blocks-icon-1.svg" class="img-responsive" alt="">
+                                        </div>
+                                        <a href="#">Актуальные цены и остатки</a>
+                                    </div>
+                                </div>
+                                <div class="side side-2">
+                                    <div class="shadow-wr-l">
+                                        <div class="icon">
+                                            <img src="img/some-blocks-icon-2.svg" class="img-responsive" alt="">
+                                        </div>
+                                        <a href="#">Детальная спецификация на товар с фото и видео</a>
+                                    </div>
+                                </div>
+                                <div class="side side-3">
+                                    <div class="shadow-wr-l">
+                                        <div class="icon">
+                                            <img src="img/some-blocks-icon-3.svg" class="img-responsive" alt="">
+                                        </div>
+                                        <a href="#">Продажи 24/7</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec-lvl-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>У нас вы найдете</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="shadow-wr">
+                                <div class="top-cover-wr">
+                                    <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                </div>
+                                <div class="descr">
+                                    <div class="top-descr">
+                                        <a href="#">Сардинелла, тушка, см, 80-140г, 1/10</a>
+                                        <p class="some-info">Amblygaster sirm</p>
+                                        <p class="some-info">Россия</p>
+                                    </div>
+                                    <div class="bott-descr">
+                                        <div class="butt-1">
+                                            <span>360$ </span>/ кг
+                                        </div>
+                                        <p class="some-info">партия от 255 000 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="shadow-wr">
+                                <div class="top-cover-wr">
+                                    <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                </div>
+                                <div class="descr">
+                                    <div class="top-descr">
+                                        <a href="#">Сардинелла, тушка, см, 80-140г, 1/10</a>
+                                        <p class="some-info">Amblygaster sirm</p>
+                                        <p class="some-info">Россия</p>
+                                    </div>
+                                    <div class="bott-descr">
+                                        <div class="butt-1">
+                                            <span>360$ </span>/ кг
+                                        </div>
+                                        <p class="some-info">партия от 255 000 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="shadow-wr">
+                                <div class="top-cover-wr">
+                                    <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                </div>
+                                <div class="descr">
+                                    <div class="top-descr">
+                                        <a href="#">Сардинелла, тушка</a>
+                                        <p class="some-info">Amblygaster sirm</p>
+                                        <p class="some-info">Россия</p>
+                                    </div>
+                                    <div class="bott-descr">
+                                        <div class="butt-1">
+                                            <span>360$ </span>/ кг
+                                        </div>
+                                        <p class="some-info">партия от 255 000 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="shadow-wr">
+                                <div class="top-cover-wr">
+                                    <div class="top-cover" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                </div>
+                                <div class="descr">
+                                    <div class="top-descr">
+                                        <a href="#">Сардинелла, тушка, см, 80-140г, 1/10</a>
+                                        <p class="some-info">Amblygaster sirm</p>
+                                        <p class="some-info">Россия</p>
+                                    </div>
+                                    <div class="bott-descr">
+                                        <div class="butt-1">
+                                            <span>360$ </span>/ кг
+                                        </div>
+                                        <p class="some-info">партия от 255 000 кг</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec-lvl-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="second-baner">
+                                <h6>Ищете что-то особенное?</h6>
+                                <p>Отправьте нам запрос на интересующий вас продукт!</p>
+                                <span data-toggle="modal" data-target="#sendRequest">Отправить запрос</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec-lvl-7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5>Наши партнеры</h5>
+                        </div>
+                    </div>
+                    <div class="row for-flex-alighn">
+                        <div class="col-md-3">
+                            <img src="img/partner-1.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/partner-2.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/partner-3.jpg" class="img-responsive" alt="">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="img/partner-4.jpg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec-lvl-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="subscribe-text">Подпишитесь на лучшие предложения<br>на рынке рыбы и морепродуктов</p>
+                            <form>
+                                <input class="form-field" type="email" placeholder="Введите ваш e-mail">
+                                <button type="submit">Подписаться</button>
+                            </form>
+                            <p class="policy">Отправляя данные вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="bordered">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="top-side-footer">
+                                <div class="left-side">
+                                    <span class="email"><a href="#">info@yorso.com</a></span>
+                                    <div class="for-border-r">
+                                        <p class="subscribe-text">Подпишитесь на обновления</p>
+                                    </div>
+                                    <span class="call">
+                                        <a href="#">Telegram</a>
+                                        <a href="#">Viber</a>
+                                        <a href="#">WhatsApp</a>
+                                    </span>
+                                    <div class="soc-links">
+                                        <a href="#">
+                                            <img src="img/Twitter.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/Facebook.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/Linked.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/VK.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/G.svg" class="img-responsive" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <p class="country" style="background-image: url(img/Russia.png)">
+                                        Россия
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bordered">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mid-side-footer">
+                                <div class="left-side">
+                                    <ul class="menu-side">
+                                        <li>Компания</li>
+                                        <li>
+                                            <a href="#">О нас</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Связаться с нами</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Политика cookies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Персональные данные</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Вопросы и ответы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Контакты</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu-side">
+                                        <li>Продукты и услуги</li>
+                                        <li>
+                                            <a href="#">Главная</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Каталог товаров</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Как это работает</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Покупателям</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Поставщикам</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Оплата и доставка</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="right-side">
+                                    <div class="one-office">
+                                        <div class="one-col">
+                                            <p class="num-t">Россия</p>
+                                            <a href="#" class="num">+7 (499) 703-32-24</a>
+                                            <a href="#" class="num">+7 (926) 826-85-39</a>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="head-sec-col">Реквизиты</p>
+                                            <p class="req">ООО "ИННОСОФТ"<br>ИНН 1615012919<br>ОГРН 1161690132966</p>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="req">Ул. Университетская, д. 7,<br>г. Иннополис, Верхнеуслонский р-н,<br>респ. Татарстан. 420500</p>
+                                        </div>
+                                    </div>
+                                    <div class="one-office">
+                                       <div class="one-col">
+                                            <p class="num-t">Евросоюз</p>
+                                            <a href="#" class="num">+372 (63) 46152</a>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="head-sec-col">Реквизиты</p>
+                                            <p class="req">Yorso Europe OÜ<br>Реестровый номер 14451226</p>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="req">Tallinn, Kesklinna linnaosa,<br>Kiriku tn 6, 10130 </p>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bordered">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bot-side-footer">
+                                <a href="#">
+                                    <img class="img-responsive" src="img/logo-white.svg" alt="">
+                                </a>
+                                <p>© 2013-2018 Yorso - маркетплейс для рынка рыбы и морепродуктов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </footer>
+    </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="sendRequest" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+                    <form class="sendRequest-form">
+                        <div class="email-wr">
+                            <!--ошибкам даем класс "arr" при наличии ошибки-->
+                            <input type="text" placeholder="Введите ваш e-mail">
+                            <!--ошибкам даем класс "arr" при наличии ошибки-->
+                            <p >Ввведен некорректный e-mail</p>
+                        </div>
+                        <div class="text-area-wr">
+                            <textarea placeholder="Что вы хотите?"></textarea>
+                            <p>Опишите интересующий вас товар</p>
+                        </div>
+                        <div class="one-checkbox">
+                            <div class="check-style">
+                                <input type="checkbox" class="checkbox" name="" id="checkbox-agreement">
+                                <label for="checkbox-agreement"></label>
+                            </div>
+                            <p>Я даю согласие на обработку своих данных в соответствии с <a href="#">политикой конфиденциальности</a></p>
+                        </div>
+                        <p>Для отправки запроса необходимо дать согласие на обработку данных</p>
+                        <div class="buttons-wrapp">
+                            <div class="for-padd">
+                                <button style="butt-1" type="submit">Отправить запрос</button>
+                            </div>
+                            <!--добавляем класс "show" для появления кнопки-->
+                            <a href="#" class="get-cons show">Связаться с консультантом</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
