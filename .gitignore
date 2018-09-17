@@ -67,3 +67,5 @@ blockchain/contracts/CertificationCenter.address
 /public/sitemap_static.xml
 /public/robots.txt
 /public/static/css/build/*.css.map
+css/build/*.css
+css/build/*.css.map
