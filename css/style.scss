@@ -3241,10 +3241,11 @@ footer {
 // style for catalog
 
 .catalog {
-  display: flex;
+  position: relative;
 
   &-a-side {
-    flex: 1;
+    width: calc(100% - 260px);
+    min-width: calc(100% - 260px);
     padding-right: 32px;
   }
 
@@ -3252,6 +3253,7 @@ footer {
     width: 260px;
     padding-left: 32px;
     padding-top: 4px;
+    float: right;
   }
 }
 
@@ -3259,7 +3261,7 @@ footer {
   padding-top: 75px;
 
   .container {
-    width: 100%;
+
     max-width: 1230px;
 
     @media (min-width: 1240px) {
@@ -3297,16 +3299,17 @@ footer {
     top: 0;
     border-radius: 0;
     border: none;
-    background: #F77640;
+    background-color: #F77640;
     transition: 0.2s ease-in-out;
 
     &:hover {
-      background: #ED5A1C;
+      background-color: #ED5A1C;
     }
 
     &:active,
     &:focus {
-      background: #DB4A0D !important;
+      background-color: #DB4A0D !important;
+      outline: none !important;
     }
   }
 }
@@ -3510,7 +3513,7 @@ footer {
   padding: 0 8px;
 
   &__weil {
-    width: 1px;
+    width: 3px;
     background: #fff;
     z-index: 3;
     position: absolute;
@@ -3715,7 +3718,7 @@ footer {
   }
 
   .product-item__body {
-    flex: 1;
+    width: calc(100% - 136px);
     padding: 0;
     display: flex;
   }
@@ -3725,6 +3728,7 @@ footer {
   }
 
   .product-item__company__wrap {
+    // width: calc(100% - 597px);
     flex: 1;
     padding: 0 15px;
   }
@@ -4087,6 +4091,10 @@ footer {
   }
 }
 
+.show-filter-xs {
+  display: none;
+}
+
 .catalog-feedback {
   background: #717582;
   overflow: hidden;
@@ -4102,7 +4110,7 @@ footer {
 
     &--request {
       color: #f77640;
-      width: 347px;
+      max-width: 347px;
       font-family: OpenSansBold, sans-serif;
       font-size: 24px;
       font-weight: 600;
@@ -4337,6 +4345,13 @@ footer {
     &__weight {
       width: 46%;
       height: 8px;
+    }
+
+    &__company {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: none !important;
     }
   }
 

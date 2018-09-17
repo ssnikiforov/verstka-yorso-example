@@ -135,55 +135,59 @@
                                     </button>
                                 </form>
                             </div>
-                            <form action="" class="catalog-feedback catalog-feedback--request text-center">
-                                <div class="catalog-feedback__header">По запросу “Папва” не найдено ни одного  товара</div>
-                                <p class="catalog-feedback__title catalog-feedback__title--request">Оставьте запрос, и наши специалисты помогут вам</p>
-                                <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Наименование товара">
-                                <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Ваш e-mail">
-                                <button class="btn btn-warning catalog-search__btn catalog-request__btn">Отправить запрос</button>
-                            </form>
                         </div>
                         <div class="catalog-b-side">
+                            <div class="show-filter-xs">
+                                <span class="show-filter-xs__icon">
+                                    <div class="line line-top"></div>
+                                    <div class="line line-bottom"></div>
+                                </span>
+                                <span class="show-filter-xs__text">Фильтры</span>
+                            </div>
                             <div class="catalog-filters">
-                                <div class="catalog-filters__panel">
+                                <div class="catalog-filters__panel catalog-filters__panel-1">
                                     <p class="catalog-filters__title">Тип продукции</p>
                                     <div class="collapse catalog-filters__container" id="collapseExample" aria-expanded="false">
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Готовая</span>
-                                        </label>
+                                        <div class="catalog-filter__wrap">
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Готовая</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <a role="button" class="collapsed catalog-filters__show" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Показать все</a>
+                                    <div class="catalog-filters__show--wrap">
+                                        <a role="button" class="collapsed catalog-filters__show" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Показать все</a>
+                                    </div>
                                 </div>
-                                <div class="catalog-filters__panel">
+                                <div class="catalog-filters__panel catalog-filters__panel-2">
                                     <div class="catalog-filters__container">
                                         <p class="catalog-filters__title">Страна добычи</p>
                                         <div class="custom-select__wrap">
@@ -209,7 +213,7 @@
                                         <div class="custom-select__add"><span></span>Добавить страну</div>
                                     </div>
                                 </div>
-                                <div class="catalog-filters__panel">
+                                <div class="catalog-filters__panel catalog-filters__panel-3">
                                     <div class="catalog-filters__container">
                                         <p class="catalog-filters__title">Страна поставки</p>
                                         <div class="custom-select__wrap">
@@ -225,31 +229,43 @@
                                         <div class="custom-select__add"><span></span>Добавить страну</div>
                                     </div>
                                 </div>
-                                <div class="catalog-filters__panel">
+                                <div class="catalog-filters__panel catalog-filters__panel-4">
                                     <div class="catalog-filters__container">
                                         <p class="catalog-filters__title">НДС</p>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">Без НДС</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">0%</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">10%</span>
-                                        </label>
-                                        <label class="catalog-filter">
-                                            <input type="checkbox" class="hidden">
-                                            <span class="catalog-filter__name">18%</span>
-                                        </label>
+                                        <div class="catalog-filter__wrap">
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">Без НДС</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">0%</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">10%</span>
+                                            </label>
+                                            <label class="catalog-filter">
+                                                <input type="checkbox" class="hidden">
+                                                <span class="catalog-filter__name">18%</span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="catalog-filters__panel catalog-filters__panel--bordered">
-                                    <button class="btn btn-default btn-default-custom btn-default-custom--lg btn-block " onclick="var btn = this; setTimeout(function(){btn.blur()}, 300)">Применить фильтры</button>
+                                <div class="catalog-filters__panel catalog-filters__panel--bordered catalog-filters__panel catalog-filters__panel-5">
+                                    <button class="btn btn-default btn-default-custom btn-default-custom--lg btn-block btn-default-fiter" onclick="var btn = this; setTimeout(function(){btn.blur()}, 300)">Применить фильтры</button>
+                                    <button class="btn btn-default btn-default-custom btn-default-custom--lg btn-block btn-default-hide-fiter hidden-sm hidden-md hidden-lg" onclick="var btn = this; setTimeout(function(){btn.blur()}, 300)">Скрыть фильтры</button>
                                 </div>
                             </div>  
+                        </div>
+                        <div class="catalog-a-side">
+                            <form action="" class="catalog-feedback catalog-feedback--request text-center">
+                                <div class="catalog-feedback__header catalog-feedback__header--request">По запросу “Папва” не найдено ни одного  товара</div>
+                                <p class="catalog-feedback__title catalog-feedback__title--request">Оставьте запрос, и наши специалисты помогут вам</p>
+                                <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Наименование товара">
+                                <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Ваш e-mail">
+                                <button class="btn btn-warning catalog-search__btn catalog-request__btn">Отправить запрос</button>
+                            </form>
                         </div>
                     </div>
                 </div>
