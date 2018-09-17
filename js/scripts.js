@@ -20,6 +20,22 @@ $(document).ready(function () {
         }
       
     }
+
+    // init select 2
+    if(document.querySelector('.custom-select')) {
+        $('.custom-select').select2({
+          width: '100%',
+          theme: "bootstrap",
+          allowClear: true,
+          placeholder: 'Выберите страну',
+          'containerCssClass': 'catalog-select',
+          'dropdownCssClass': 'catalog-select__dropdown',
+        });
+    }
+
+    $('.custom-select').on('select2:open', function() {
+        $('.select2-search--dropdown .select2-search__field').attr('placeholder', 'Начните вводить название страны');
+    });
     
     
     
