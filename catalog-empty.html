@@ -137,14 +137,14 @@
                             </div>
                         </div>
                         <div class="catalog-b-side">
-                            <div class="show-filter-xs">
+                            <div class="show-filter-xs collapsed" data-toggle="collapse" data-target="#catalog-filters" aria-expanded="false">
                                 <span class="show-filter-xs__icon">
                                     <div class="line line-top"></div>
                                     <div class="line line-bottom"></div>
                                 </span>
                                 <span class="show-filter-xs__text">Фильтры</span>
                             </div>
-                            <div class="catalog-filters">
+                            <div class="catalog-filters collapse navbar-collapse" id="catalog-filters" aria-expanded="false">
                                 <div class="catalog-filters__panel catalog-filters__panel-1">
                                     <p class="catalog-filters__title">Тип продукции</p>
                                     <div class="collapse catalog-filters__container" id="collapseExample" aria-expanded="false">
@@ -254,7 +254,7 @@
                                 </div>
                                 <div class="catalog-filters__panel catalog-filters__panel--bordered catalog-filters__panel catalog-filters__panel-5">
                                     <button class="btn btn-default btn-default-custom btn-default-custom--lg btn-block btn-default-fiter" onclick="var btn = this; setTimeout(function(){btn.blur()}, 300)">Применить фильтры</button>
-                                    <button class="btn btn-default btn-default-custom btn-default-custom--lg btn-block btn-default-hide-fiter hidden-sm hidden-md hidden-lg" onclick="var btn = this; setTimeout(function(){btn.blur()}, 300)">Скрыть фильтры</button>
+                                    <button class="btn btn-default btn-default-custom btn-default-custom--lg btn-block btn-default-hide-fiter hidden-sm hidden-md hidden-lg collapsed" data-toggle="collapse" data-target="#catalog-filters" aria-expanded="false" onclick="var btn = this; setTimeout(function(){btn.blur()}, 300)">Скрыть фильтры</button>
                                 </div>
                             </div>  
                         </div>
@@ -262,8 +262,10 @@
                             <form action="" class="catalog-feedback catalog-feedback--request text-center">
                                 <div class="catalog-feedback__header catalog-feedback__header--request">По запросу “Папва” не найдено ни одного  товара</div>
                                 <p class="catalog-feedback__title catalog-feedback__title--request">Оставьте запрос, и наши специалисты помогут вам</p>
-                                <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Наименование товара">
-                                <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Ваш e-mail">
+                                <div class="catalog-feedback__field-wrap--request">
+                                    <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Наименование товара">
+                                    <input type="text" class="form-control catalog-feedback__field catalog-feedback__field--request" placeholder="Ваш e-mail">
+                                </div>
                                 <button class="btn btn-warning catalog-search__btn catalog-request__btn">Отправить запрос</button>
                             </form>
                         </div>
