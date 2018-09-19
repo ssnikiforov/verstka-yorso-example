@@ -1,3 +1,21 @@
+//fonts
+$OPS-R: OpenSansRegular;
+$OPS-SB: OpenSansSemiBold;
+$OPS-B: OpenSansBold;
+
+//colors
+$brand-white: #fff;
+$brand-white-hover: #F4F4F4;
+$brand-white-active: #EEE;
+$brand-black: #0D0D0D;
+$brand-orange: #F77640;
+$brand-orange-hover: #ED5A1C;
+$brand-orange-active: #DB4A0D;
+$brand-gray: #E3E3E3;
+$brand-gray-hover: #D9D9DA;
+$brand-icon-default: #717582;
+$brand-shadow: rgba(0, 0, 0, 0.06);
+
 @font-face {
   font-family: OpenSansRegular;
   src: url('../fonts/OpenSansRegular.eot');
@@ -3277,16 +3295,16 @@ footer {
 
   &__field {
     height: 48px;
-    box-shadow: 2px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 2px 4px $brand-shadow;
     border: none;
     border-radius: 4px;
     padding: 10px 135px 10px 16px;
     font-size: 16px;
-    color: #0D0D0D;
+    color: $brand-black;
 
     &:focus {
       border: none;
-      box-shadow: 2px 4px rgba(0, 0, 0, 0.06);
+      box-shadow: 2px 4px $brand-shadow;
     }
   }
 
@@ -3300,16 +3318,16 @@ footer {
     top: 0;
     border-radius: 0;
     border: none;
-    background-color: #F77640;
+    background-color: $brand-orange;
     transition: 0.2s ease-in-out;
 
     &:hover {
-      background-color: #ED5A1C;
+      background-color: $brand-orange-hover;
     }
 
     &:active,
     &:focus {
-      background-color: #DB4A0D !important;
+      background-color: $brand-orange-active !important;
       outline: none !important;
     }
   }
@@ -3323,8 +3341,8 @@ footer {
 
   &__result {
     font-size: 16px;
-    color: #0D0D0D;
-    font-family: OpenSansRegular, sans-serif;
+    color: $brand-black;
+    font-family: $OPS-R, sans-serif;
   }
 
   &__variant {
@@ -3333,7 +3351,7 @@ footer {
   }
 
   &__item {
-    font-family: OpenSansRegular, sans-serif;
+    font-family: $OPS-R, sans-serif;
     font-size: 13px;
     text-decoration: none;
     display: block;
@@ -3341,13 +3359,13 @@ footer {
     margin-left: 32px;
     
 
-    label {
+    &__label {
       padding-left: 20px;
       position: relative;
       font-weight: 400;
       cursor: pointer;
       margin: 0;
-      color: #0D0D0D;
+      color: $brand-black;
 
       &:before {
         content: '';
@@ -3360,8 +3378,8 @@ footer {
       }
     }
 
-    input[type="checkbox"]:checked + label {
-      color: #ED5A1C;
+    input[type="checkbox"]:checked + .sort-panel__item__label {
+      color: $brand-orange-hover;
       &:before {
         background: url(../img/checkbox-checked.svg) center no-repeat;
       }
@@ -3369,14 +3387,14 @@ footer {
     
     &:hover {
       label {
-        color: #F77640;
+        color: $brand-orange-hover;
       }
     }
 
     &--weight {
       
       &.active {
-        color: #ED5A1C;
+        color: $brand-orange-hover;
 
         .icon-sort-weight {
           opacity: 1;
@@ -3411,7 +3429,7 @@ footer {
       .line {
         display: block;
         height: 2px;
-        background: #F77640;
+        background: $brand-orange;
         margin-bottom: 1px;
         transition: 0.3s ease-in-out;
 
@@ -3452,32 +3470,32 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: #E3E3E3;
+    background: $brand-gray;
     margin-left: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &.active {
-      background: #F77640;
+      background: $brand-orange;
 
       .icon-vertical >div {
-        border-color: #fff;
-        background: #fff;
+        border-color: $brand-white;
+        background: $brand-white;
       }
 
-      .icon-horisontal >div {
-        border-color: #fff;
-        background: #fff;
+      .icon-horizontal >div {
+        border-color: $brand-white;
+        background: $brand-white;
       }
 
       &:hover {
-        background: #F77640;
+        background: $brand-orange;
       }
     }
 
     &:hover {
-      background: #D9D9DA;
+      background: $brand-gray-hover;
     }
   }
 }
@@ -3485,25 +3503,25 @@ footer {
 .icon-vertical {
   width: 14px;
 
-  div {
+  &__square {
     width: 5px;
     height: 5px;
-    border: 0.5px solid #717582;
+    border: 0.5px solid $brand-icon-default;
     border-radius: 1px;
     float: left;
     margin: 1px;
   }
 }
 
-.icon-horisontal {
+.icon-horizontal {
   width: 14px;
 
-  div {
+  &__line {
     margin: 1px 0;
     height: 4px;
     width: 14px;
     border-radius: 2px;
-    border: 0.5px solid #717582;
+    border: 0.5px solid $brand-icon-default;
   }
 }
 
@@ -3515,7 +3533,7 @@ footer {
 
   &__weil {
     width: 3px;
-    background: #fff;
+    background: $brand-white;
     z-index: 3;
     position: absolute;
     right: 8px;
@@ -3524,8 +3542,8 @@ footer {
   }
 
   &__view-count {
-    border-top: 1px solid #E3E3E3;
-    border-bottom: 1px solid #E3E3E3;
+    border-top: 1px solid $brand-gray;
+    border-bottom: 1px solid $brand-gray;
     position: relative;
     padding: 16px 0;
     margin-top: -33px;
@@ -3535,13 +3553,13 @@ footer {
       top: 0;
       left: 0;
       height: 100%;
-      background: #E3E3E3;
+      background: $brand-gray;
     }
 
     &__text {
-      font-family: OpenSansRegular, sans-serif;
+      font-family: $OPS-R, sans-serif;
       font-weight: 400;
-      color: #717582;
+      color: $brand-icon-default;
       font-size: 16px;
       line-height: 22px;
       text-align: center;
@@ -3549,20 +3567,20 @@ footer {
       z-index: 2;
 
       span {
-        color: #0D0D0D;
+        color: $brand-black;
       }
     }
 
     &--request {
-      border-top: 1px solid #F77640;
+      border-top: 1px solid $brand-orange;
       border-bottom: none;
       
       .product-list__view-count__text {
-        color: #F77640;
-        font-family: OpenSansBold, sans-serif;
+        color: $brand-orange;
+        font-family: $OPS-B, sans-serif;
 
         span {
-          color: #F77640;
+          color: $brand-orange;
         }
       }
     }
@@ -3574,8 +3592,8 @@ footer {
   padding: 0 8px;
   text-decoration: none;
   padding-bottom: 50px;
-  border-right: 1px solid #E3E3E3;
-  border-bottom: 1px solid #E3E3E3;
+  border-right: 1px solid $brand-gray;
+  border-bottom: 1px solid $brand-gray;
   margin-bottom: 32px;
   position: relative;
 
@@ -3593,7 +3611,7 @@ footer {
 
   &__name {
     font-size: 17px;
-    color: #0D0D0D;
+    color: $brand-black;
     line-height: 23px;
     height: 46px;
     overflow: hidden;
@@ -3606,8 +3624,8 @@ footer {
     line-height: 24px;
     height: 46px;
     overflow: hidden;
-    color: #717582;
-    font-family: OpenSansRegular, sans-serif;
+    color: $brand-icon-default;
+    font-family: $OPS-R, sans-serif;
     font-weight: 400;
     margin-bottom: 11px;
   }
@@ -3628,12 +3646,12 @@ footer {
     font-size: 22px;
     line-height: 30px;
     font-weight: 400;
-    color: #0D0D0D;
-    font-family: OpenSansRegular, sans-serif;
+    color: $brand-black;
+    font-family: $OPS-R, sans-serif;
     margin-bottom: 9px;
 
     span {
-      color: #F77640;
+      color: $brand-orange;
       font-weight: 600;
     }
   }
@@ -3641,35 +3659,35 @@ footer {
   &__weight {
     font-size: 16px;
     line-height: 22px;
-    color: #717582;
-    font-family: OpenSansRegular, sans-serif;
+    color: $brand-icon-default;
+    font-family: $OPS-R, sans-serif;
     font-weight: 400;
   }
 
   &__viewed {
-    background: #E3E3E3;
+    background: $brand-gray;
     font-size: 13px;
     line-height: 18px;
     padding: 11px 0;
     text-align: center;
-    color: #717582;
+    color: $brand-icon-default;
     width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
-    font-family: OpenSansRegular, sans-serif;
+    font-family: $OPS-R, sans-serif;
     font-weight: 400;
   }
 
   &:hover {
     .product-item__name {
-      color: #F77640;
+      color: $brand-orange;
     }
   } 
 }
 
 .product-timer {
-  background-color: #FC6526;
+  background-color: $brand-orange-hover;
   position: relative;
   display: inline-block;
   padding: 5px 20px;
@@ -3678,7 +3696,7 @@ footer {
   left: -5px;
 
   &__counter {
-    color: #fff;
+    color: $brand-white;
     margin-right: 8px;
     float: left;
 
@@ -3688,7 +3706,7 @@ footer {
   }
 }
 
-.product-item--horisontal {
+.product-item--horizontal {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -3736,7 +3754,7 @@ footer {
 
   .product-item__company {
     position: static;
-    border: 1px solid #A7A3B3;
+    border: 1px solid $brand-gray-hover;
   }
 
   .product-item__body__price-info {
@@ -3755,29 +3773,29 @@ footer {
 
 .show-more-container {
   padding: 33px 0 64px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $brand-black;
 }
 
 .btn-default-custom {
-  color: #F77640;
-  font-family: OpenSansBold, sans-serif;
+  color: $brand-orange;
+  font-family: $OPS-B, sans-serif;
   border-radius: 3px;
-  border: 1px solid #E3E3E3;
+  border: 1px solid $brand-gray;
   font-size: 16px;
   padding: 8px 20px;
   transition: 0.3s ease-in-out;
 
   &:hover {
-    background: #F8F8F8;
-    color: #F77640;
-    border-color: #E3E3E3;
+    background: $brand-white-hover;
+    color: $brand-orange;
+    border-color: $brand-gray;
   }
 
   &:active,
   &:focus {
-    background: #eee !important;
-    color: #F77640 !important;
-    border-color: #E3E3E3 !important;
+    background: $brand-white-active !important;
+    color: $brand-orange !important;
+    border-color: $brand-gray !important;
     outline: none !important;
     box-shadow: none;
   }
@@ -3794,8 +3812,8 @@ footer {
 .catalog__text {
   font-size: 15px;
   line-height: 20px;
-  color: #0D0D0D;
-  font-family: OpenSansRegular, sans-serif;
+  color: $brand-black;
+  font-family: $OPS-R, sans-serif;
 }
 
 .catalog-filters {
@@ -3810,7 +3828,7 @@ footer {
     margin-bottom: 32px;
 
     &--bordered {
-      border-bottom: 1px solid #E3E3E3;
+      border-bottom: 1px solid $brand-gray;
       padding-bottom: 45px;
       margin-bottom: 0;
       margin-left: -32px;
@@ -3835,7 +3853,7 @@ footer {
   }
 
   &__show {
-    color: #F77640;
+    color: $brand-orange;
     font-size: 13px;
     line-height: 18px;
     display: inline-block;
@@ -3850,7 +3868,7 @@ footer {
       left: 0;
       width: 16px;
       height: 16px;
-      background: #F77640;
+      background: $brand-orange;
       border-radius: 2px;
     }
 
@@ -3861,7 +3879,7 @@ footer {
       left: 3px;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-      border-bottom: 5px solid #fff;
+      border-bottom: 5px solid $brand-white;
       z-index: 2;
       transform: rotatez(0deg);
     }
@@ -3878,8 +3896,8 @@ footer {
 }
 
 .catalog-filter {
-  color: #0D0D0D;
-  font-family: OpenSansRegular, sans-serif;
+  color: $brand-black;
+  font-family: $OPS-R, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin-bottom: 0;
@@ -3894,7 +3912,7 @@ footer {
   &__name {
     position: relative;
     padding-left: 32px;
-    font-family: OpenSansRegular, sans-serif;
+    font-family: $OPS-R, sans-serif;
     font-weight: 400;
     
 
@@ -3905,7 +3923,7 @@ footer {
       left: 0;
       width: 16px;
       height: 16px;
-      border: 1px solid #E3E3E3;
+      border: 1px solid $brand-gray;
       border-radius: 2px;
     }
 
@@ -3931,11 +3949,11 @@ footer {
   }
 
   &:hover {
-    background: #EEEEEE;
+    background: $brand-white-active;
   }
 
   &:active {
-    background: #D9D9DA;
+    background: $brand-gray-hover;
   }
 }
 
@@ -3949,7 +3967,7 @@ footer {
   &__add {
     font-size: 13px;
     line-height: 18px;
-    color: #F77640;
+    color: $brand-orange;
     padding-left: 32px;
     position: relative;
     cursor: pointer;
@@ -3960,7 +3978,7 @@ footer {
       width: 16px;
       height: 16px;
       border-radius: 2px;
-      background-color: #D9D9DA;
+      background-color: $brand-gray-hover;
       position: absolute;
       top: 2px;
       left: 0;
@@ -3979,7 +3997,7 @@ footer {
 
     &:hover {
       &:before {
-        background-color: #F77640;
+        background-color: $brand-orange;
       }
     }
   }
@@ -3987,19 +4005,19 @@ footer {
 
 .select2 .select2-container .select2-container--bootstrap {
   .select2-selection__rendered {
-    color: #717582;
+    color: $brand-icon-default;
   }
 }
 
 .select2-container .catalog-select {
-  border: 1px solid #e3e3e3;
+  border: 1px solid $brand-gray;
   border-radius: 3px;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
   height: auto;
   padding: 8px 32px 8px 8px;
-  font-family: OpenSansRegular, sans-serif;
+  font-family: $OPS-R, sans-serif;
   outline: none;
 }
 
@@ -4010,7 +4028,7 @@ footer {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: url(../img/remove-select.svg) no-repeat center center #fff;
+  background: url(../img/remove-select.svg) no-repeat center center $brand-white;
   cursor: pointer;
   font-size: 0;
   z-index: 5;
@@ -4022,8 +4040,8 @@ footer {
 }
 
 .select2-dropdown.catalog-select__dropdown {
-  border-color: #e3e3e3;
-  box-shadow: 1px 1px #e3e3e3;
+  border-color: $brand-gray;
+  box-shadow: 1px 1px $brand-gray;
 }
 
 .select2-container .catalog-select.select2-selection--single .select2-selection__rendered {
@@ -4031,7 +4049,7 @@ footer {
 }
 
 .select2-container .select2-selection__arrow b {
-  border-color: #D9D9DA transparent transparent transparent;
+  border-color: $brand-gray-hover transparent transparent transparent;
   border-style: solid;
   border-width: 5px 4px 0 4px;
   height: 0;
@@ -4046,7 +4064,7 @@ footer {
 .select2-container--open .catalog-select__dropdown .select2-search__field { 
   box-shadow: none;
   outline: none;
-  border: 1px solid #e3e3e3;
+  border: 1px solid $brand-gray;
   display: block;
   margin-top: -36px;
   margin-left: -5px;
@@ -4054,12 +4072,12 @@ footer {
   width: calc(100% + 10px);
   height: 36px;
   font-size: 13px;
-  font-family: OpenSansRegular, sans-serif;
+  font-family: $OPS-R, sans-serif;
   padding: 0 36px 0 8px;
 
   &::placeholder {
     font-size: 10px;
-    color: #ccc;
+    color: $brand-gray-hover;
   }
 }
 
@@ -4071,7 +4089,7 @@ footer {
   width: 6px;
   }
   &::-webkit-scrollbar-track {
-    background: #fff;
+    background: $brand-white;
   }
   &::-webkit-scrollbar-thumb:vertical {
     background-color: #C4C4C4;
@@ -4085,7 +4103,7 @@ footer {
   font-size: 13px;
   line-height: 18px;
   font-family: OpenSansRegular, sans-serif;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid $brand-gray;
 
   &:last-child {
     border: none;
@@ -4097,22 +4115,22 @@ footer {
 }
 
 .catalog-feedback {
-  background: #717582;
+  background: $brand-icon-default;
   overflow: hidden;
   padding-bottom: 32px;
 
   &__title {
-    font-family: OpenSansBold, sans-serif;
-    color: #fff;
+    font-family: $OPS-R, sans-serif;
+    color: $brand-white;
     font-size: 25px;
     font-weight: 600;
     line-height: 34px;
     margin: 16px 0 8px;
 
     &--request {
-      color: #f77640;
+      color: $brand-orange;
       max-width: 347px;
-      font-family: OpenSansBold, sans-serif;
+      font-family: $OPS-B, sans-serif;
       font-size: 24px;
       font-weight: 600;
       line-height: 33px;
@@ -4121,8 +4139,8 @@ footer {
   }
 
   &__subtitle {
-    font-family: OpenSansRegular, sans-serif;
-    color: #fff;
+    font-family: $OPS-R, sans-serif;
+    color: $brand-white;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 16px;
@@ -4138,11 +4156,11 @@ footer {
     margin-bottom: 12px;
     background: rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.4);
-    color: #fff;
+    color: $brand-white;
     box-shadow: none;
 
     &::placeholder {
-      color: #fff;
+      color: $brand-white;
     }
 
     &:focus {
@@ -4174,17 +4192,17 @@ footer {
   }
 
   &__header {
-      font-family: OpenSansSemiBold, sans-serif;
-      color: #7c7e82;
+      font-family: $OPS-SB, sans-serif;
+      color: $brand-icon-default;
       font-size: 14px;
       line-height: 19px;
       padding-bottom: 16px;
       padding-top: 16px;
-      border-bottom: 1px solid #e3e3e3;
+      border-bottom: 1px solid $brand-gray;
     }
 
   &--request {
-    background-color: #fff;
+    background-color: $brand-white;
   }
 }
 
@@ -4227,16 +4245,16 @@ footer {
   &__field {
     height: 40px;
     border-radius: 4px;
-    background: #fff;
+    background: $brand-white;;
     border: 1px solid rgba(49, 54, 94, 0.15);
-    color: #0D0D0D;
+    color: $brand-black;
     box-shadow: none;
     margin-bottom: 8px;
-    font-family: OpenSansRegular, sans-serif;
+    font-family: $OPS-R, sans-serif;
     padding-right: 140px;
 
     &::placeholder {
-      color: #0D0D0D;
+      color: $brand-black;
     }
 
     &:focus {
@@ -4294,7 +4312,7 @@ footer {
     }
   }
 
-  &__icon-horisontal {
+  &__icon-horizontal {
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -4326,7 +4344,7 @@ footer {
       margin-bottom: 12px;
     }
 
-    &__name2 {
+    &__name-new-line {
       width: 40%;
       height: 12px;
       margin-bottom: 22px;
@@ -4365,7 +4383,7 @@ footer {
   }
 
   &__show-more-container {
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid $brand-gray;
   }
 
   &__show-more-btn {
