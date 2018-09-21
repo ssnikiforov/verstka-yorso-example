@@ -1,0 +1,247 @@
+@import "../variables";
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 8px;
+
+  &__weil {
+    width: 3px;
+    background: $brand-white;
+    z-index: 3;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    bottom: 33px;
+  }
+
+  &__view-count {
+    border-top: 1px solid $brand-gray;
+    border-bottom: 1px solid $brand-gray;
+    position: relative;
+    padding: 16px 0;
+    margin-top: -33px;
+
+    &__progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: $brand-gray;
+    }
+
+    &__text {
+      font-family: $OPS-R, sans-serif;
+      font-weight: 400;
+      color: $brand-icon-default;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+
+      span {
+        color: $brand-black;
+      }
+    }
+
+    &--request {
+      border-top: 1px solid $brand-orange;
+      border-bottom: none;
+
+      .product-list__view-count__text {
+        color: $brand-orange;
+        font-family: $OPS-B, sans-serif;
+
+        span {
+          color: $brand-orange;
+        }
+      }
+    }
+  }
+}
+
+.product-item {
+  width: 33.3333%;
+  padding: 0 8px;
+  text-decoration: none;
+  padding-bottom: 50px;
+  border-right: 1px solid $brand-gray;
+  border-bottom: 1px solid $brand-gray;
+  margin-bottom: 32px;
+  position: relative;
+
+  &__photo {
+    height: 148px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 15px;
+  }
+
+  &__body {
+    padding: 0 16px;
+  }
+
+  &__name {
+    font-size: 17px;
+    color: $brand-black;
+    line-height: 23px;
+    height: 46px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    transition: 0.3s ease-in-out;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+    height: 46px;
+    overflow: hidden;
+    color: $brand-icon-default;
+    font-family: $OPS-R, sans-serif;
+    font-weight: 400;
+    margin-bottom: 11px;
+  }
+
+  &__company {
+    position: absolute;
+    left: 23px;
+    top: 82px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__price {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $brand-black;
+    font-family: $OPS-R, sans-serif;
+    margin-bottom: 9px;
+
+    span {
+      color: $brand-orange;
+      font-weight: 600;
+    }
+  }
+
+  &__weight {
+    font-size: 16px;
+    line-height: 22px;
+    color: $brand-icon-default;
+    font-family: $OPS-R, sans-serif;
+    font-weight: 400;
+  }
+
+  &__viewed {
+    background: $brand-gray;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 11px 0;
+    text-align: center;
+    color: $brand-icon-default;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: $OPS-R, sans-serif;
+    font-weight: 400;
+  }
+
+  &:hover {
+    .product-item__name {
+      color: $brand-orange;
+    }
+  }
+}
+
+.product-timer {
+  background-color: $brand-orange-hover;
+  position: relative;
+  display: inline-block;
+  padding: 5px 20px;
+  border-radius: 3px;
+  top: 5px;
+  left: -5px;
+
+  &__counter {
+    color: $brand-white;
+    margin-right: 8px;
+    float: left;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.product-item--horizontal {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  border-right: none;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-bottom: 32px;
+  }
+
+  .product-item__photo {
+    width: 104px;
+    height: 104px;
+    margin-right: 32px;
+  }
+
+  .product-timer {
+    padding: 5px 7px;
+    top: -5px;
+    left: -7px;
+
+    .product-timer__counter {
+      font-size: 12px;
+      margin-right: 5px;
+    }
+  }
+
+  .product-item__body {
+    width: calc(100% - 136px);
+    padding: 0;
+    display: flex;
+  }
+
+  .product-item__body__info {
+    width: 240px;
+  }
+
+  .product-item__company__wrap {
+    // width: calc(100% - 597px);
+    flex: 1;
+    padding: 0 15px;
+  }
+
+  .product-item__company {
+    position: static;
+    border: 1px solid $brand-gray-hover;
+  }
+
+  .product-item__body__price-info {
+    width: 225px;
+    padding-top: 17px;
+  }
+
+  .product-item__viewed {
+    width: 240px;
+    padding: 7px 0;
+    left: auto;
+    right: 0;
+    border-radius: 5px 0 0 0;
+  }
+}

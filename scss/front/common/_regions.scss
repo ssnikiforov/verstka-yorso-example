@@ -1,0 +1,162 @@
+@import "../variables";
+
+.regions {
+  padding: 16px 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 300;
+  background: #fff;
+  .flex-pick-region {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 51px;
+    position: relative;
+    .close-region {
+      width: 12px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      outline: none;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #7C7E82;
+        transform-origin: center;
+        left: 0;
+        transform: translateY(-50%) rotate(45deg);
+        top: 50%;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: #7C7E82;
+        transform-origin: center;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        top: 0;
+      }
+    }
+    .pick-text {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #0D0D0D;
+      font-family: OpenSansRegular, sans-serif;
+    }
+    .right-side {
+      display: flex;
+      .form-pick-region {
+        width: 246px;
+        margin-right: 12px;
+        position: relative;
+        &.opened {
+          .picked-country {
+            p {
+              background-image: url('#{$assets-path}/img/check.svg') !important;
+            }
+          }
+          .dropdown-region {
+            display: block;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+          }
+        }
+        .dropdown-region {
+          position: absolute;
+          top: calc(100% - 1px);
+          left: 0;
+          width: 100%;
+          background: #F4F4F5;
+          border: 1px solid #E3E3E3;
+          border-bottom-left-radius: 2px;
+          border-bottom-right-radius: 2px;
+          padding: 6px 9px;
+          display: none;
+          .other-regions {
+            display: block;
+            font-size: 13px;
+            padding-left: 23px;
+            font-family: OpenSansRegular, sans-serif;
+            background-size: 16px;
+            background: no-repeat center left;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #0D0D0D;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+
+          }
+        }
+        .picked-country {
+          border: 1px solid #E3E3E3;
+          border-radius: 2px;
+          padding: 6px 9px;
+          cursor: pointer;
+          position: relative;
+          &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 3.5px 3px 0 3px;
+            border-color: #7c7e82 transparent transparent transparent;
+            transform: translateY(-50%);
+          }
+          p {
+            font-size: 13px;
+            padding-left: 23px;
+            font-family: OpenSansRegular, sans-serif;
+            background-size: 16px;
+            background: no-repeat center left;
+            padding-right: 22px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            color: #0D0D0D;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background: no-repeat center left;
+            background-size: 17px;
+          }
+        }
+
+      }
+      .continue {
+        font-family: OpenSansSemiBold, sans-serif;
+        font-size: 13px;
+        padding: 6px 14px;
+        color: #fff;
+        background: #FC6526;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        display: block;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../variables";
+
+.navbar-toggle .icon-bar {
+  transition: 0.3s;
+  transform-origin: center;
+  &:nth-child(3) {
+    transition: 0.2s;
+  }
+}
+
+.navbar-toggle {
+  &[aria-expanded=true] {
+    .icon-bar {
+      &:nth-child(2) {
+        transform: rotate(45deg) translateY(9px);
+      }
+      &:nth-child(3) {
+        width: 0;
+      }
+      &:nth-child(4) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+    }
+  }
+}

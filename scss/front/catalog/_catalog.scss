@@ -1,0 +1,147 @@
+@import "../variables";
+
+.catalog {
+  position: relative;
+
+  &-a-side {
+    width: calc(100% - 260px);
+    min-width: calc(100% - 260px);
+    padding-right: 32px;
+    float: left;
+  }
+
+  &-b-side {
+    width: 260px;
+    padding-left: 32px;
+    padding-top: 4px;
+    float: right;
+  }
+}
+
+.sec-catalog {
+  padding-top: 75px;
+
+  .container {
+
+    max-width: 1230px;
+
+    @media (min-width: 1240px) {
+      width: 100%;
+    }
+  }
+}
+
+.catalog-search {
+  position: relative;
+  margin: 15px 0 33px;
+
+  &__field {
+    height: 48px;
+    box-shadow: 2px 4px $brand-shadow;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 135px 10px 16px;
+    font-size: 16px;
+    color: $brand-black;
+
+    &:focus {
+      border: none;
+      box-shadow: 2px 4px $brand-shadow;
+    }
+  }
+
+  &__btn {
+    width: 128px;
+    padding: 12px 0;
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    border-radius: 0;
+    border: none;
+    background-color: $brand-orange;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $brand-orange-hover;
+    }
+
+    &:active,
+    &:focus {
+      background-color: $brand-orange-active !important;
+      outline: none !important;
+    }
+  }
+}
+
+
+.icon-vertical {
+  width: 14px;
+
+  &__square {
+    width: 5px;
+    height: 5px;
+    border: 0.5px solid $brand-icon-default;
+    border-radius: 1px;
+    float: left;
+    margin: 1px;
+  }
+}
+
+.icon-horizontal {
+  width: 14px;
+
+  &__line {
+    margin: 1px 0;
+    height: 4px;
+    width: 14px;
+    border-radius: 2px;
+    border: 0.5px solid $brand-icon-default;
+  }
+}
+
+.catalog__text-container {
+  padding: 32px 0 0;
+}
+
+.catalog__text {
+  font-size: 15px;
+  line-height: 20px;
+  color: $brand-black;
+  font-family: $OPS-R, sans-serif;
+}
+
+.show-more-container {
+  padding: 33px 0 64px;
+  border-bottom: 1px solid $brand-black;
+}
+
+.btn-default-custom {
+  color: $brand-orange;
+  font-family: $OPS-B, sans-serif;
+  border-radius: 3px;
+  border: 1px solid $brand-gray;
+  font-size: 16px;
+  padding: 8px 20px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background: $brand-white-hover;
+    color: $brand-orange;
+    border-color: $brand-gray;
+  }
+
+  &:active,
+  &:focus {
+    background: $brand-white-active !important;
+    color: $brand-orange !important;
+    border-color: $brand-gray !important;
+    outline: none !important;
+    box-shadow: none;
+  }
+
+  &--lg {
+    padding: 12px 20px;
+  }
+}

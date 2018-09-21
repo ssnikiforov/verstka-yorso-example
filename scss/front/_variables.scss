@@ -1,0 +1,26 @@
+@import "../env_variables";
+
+//fonts
+$OPS-R: OpenSansRegular;
+$OPS-SB: OpenSansSemiBold;
+$OPS-B: OpenSansBold;
+
+//colors
+$brand-white: #fff;
+$brand-white-hover: #F4F4F4;
+$brand-white-active: #EEE;
+$brand-black: #0D0D0D;
+$brand-orange: #F77640;
+$brand-orange-hover: #ED5A1C;
+$brand-orange-active: #DB4A0D;
+$brand-gray: #E3E3E3;
+$brand-gray-hover: #D9D9DA;
+$brand-icon-default: #717582;
+$brand-shadow: rgba(0, 0, 0, 0.06);
+
+$href-hover-color: #F77640;
+
+//media
+$lg: (max-width: 1239px);
+$md: (max-width: 991px);
+$sm: (max-width: 767px);
