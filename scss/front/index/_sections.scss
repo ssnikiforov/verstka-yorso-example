@@ -8,6 +8,9 @@
   display: flex;
   align-items: flex-end;
   padding-bottom: 55px;
+  @media #{$xs} {
+    height: 520px;
+  }
   h1, h2, h3, h4, h5, h6 {
     max-width: 640px;
     margin: 0 auto 12px auto;
@@ -15,15 +18,21 @@
     font-weight: normal;
     font-size: 32px;
     font-family: OpenSansBold, sans-serif;
-    color: #fff;
-
+    color: $brand-white;
+    @media #{$xs} {
+      font-size: 21px;
+    }
   }
   p {
     max-width: 720px;
     margin: 0 auto 36px auto;
-    color: #fff;
+    color: $brand-white;
     font-family: OpenSansRegular, sans-serif;
     text-align: center;
+    @media #{$xs} {
+      font-size: 14px;
+      margin: 0 auto 22px auto;
+    }
   }
   form {
     display: flex;
@@ -31,7 +40,7 @@
       border: none;
       font-size: 16px;
       width: 100%;
-      background: #fff;
+      background: $brand-white;
       outline: none;
       font-family: OpenSansRegular, sans-serif;
       padding: 8px 16px;
@@ -55,11 +64,11 @@
       border: none;
       outline: none;
       transition: 0.3s;
-      color: #fff;
+      color: $brand-white;
       background: #E77E4D;
       font-family: OpenSansBold, sans-serif;
       &:hover {
-        background: #ED5A1C;
+        background: $brand-orange-hover;
       }
     }
   }
@@ -74,8 +83,12 @@
 .sec-lvl-4 {
   padding-top: 65px;
   margin-bottom: 100px;
+  @media #{$xs} {
+    padding-top: 20px;
+    margin-bottom: 60px;
+  }
   h2 {
-    color: #0D0D0D;
+    color: $brand-black;
     font-size: 30px;
     font-weight: normal;
     font-family: OpenSansBold, sans-serif;
@@ -86,6 +99,13 @@
     &:last-child {
       .wrapp-how-works {
         &:after {
+          display: none;
+        }
+      }
+    }
+    @media #{$sm} {
+      &:nth-child(even) {
+        .wrapp-how-works:after {
           display: none;
         }
       }
@@ -104,6 +124,9 @@
       width: 55%;
       height: 2px;
       background: rgba(56, 170, 235, 0.18);
+      @media #{$xs} {
+        display: none;
+      }
     }
     .icon {
       width: 96px;
@@ -122,6 +145,10 @@
   .flex-block-links {
     padding-top: 30px;
     display: flex;
+    @media #{$sm} {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .side {
       padding: 0 20px;
       margin-bottom: 20px;
@@ -149,17 +176,41 @@
           display: block;
           font-size: 20px;
           font-family: OpenSansBold, sans-serif;
-          color: #0D0D0D;
+          color: $brand-black;
+          @media #{$lg} {
+            font-size: 14px;
+          }
         }
       }
       &.side-1 {
         width: 32%;
+        @media #{$sm} {
+          width: 50%;
+        }
+        @media #{$xs} {
+          width: 100%;
+          padding: 0;
+        }
       }
       &.side-2 {
         width: 41%;
+        @media #{$sm} {
+          width: 50%;
+        }
+        @media #{$xs} {
+          width: 100%;
+          padding: 0;
+        }
       }
       &.side-3 {
         width: 27%;
+        @media #{$sm} {
+          width: 50%;
+          padding-left: 0;
+        }
+        @media #{$xs} {
+          width: 100%;
+        }
         .shadow-wr-l {
           padding-right: 33px;
         }
@@ -171,7 +222,7 @@
 .sec-lvl-5 {
   margin-bottom: 45px;
   h2 {
-    color: #0D0D0D;
+    color: $brand-black;
     font-size: 30px;
     font-weight: normal;
     font-family: OpenSansBold, sans-serif;
@@ -182,30 +233,53 @@
 
 .sec-lvl-6 {
   margin-bottom: 30px;
+  @media #{$xs} {
+    margin-bottom: 10px;
+  }
   .second-baner {
     padding: 20px 48px;
-    box-shadow: -4px -2px 4px rgba(0, 0, 0, 0.04), 4px 8px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: -4px -2px 4px rgba(0, 0, 0, 0.04), 4px 8px 8px $brand-shadow;
     background-image: url('#{$assets-path}/img/second-baner-bg.jpg');
     background-repeat: no-repeat;
     background-position: center right;
     margin-bottom: 50px;
     min-height: 232px;
     transition: 0.3s;
+    @media #{$lg} {
+      background-position: center right -213px;
+    }
+    @media #{$sm} {
+      padding: 15px 30px;
+    }
+    @media #{$xs} {
+      background-image: none;
+      padding: 15px 15px;
+    }
     &:hover {
-      box-shadow: -6px -4px 8px rgba(0, 0, 0, 0.06), 8px 12px 12px rgba(0, 0, 0, 0.16);
+      box-shadow: -6px -4px 8px $brand-shadow, 8px 12px 12px rgba(0, 0, 0, 0.16);
     }
     h2 {
       font-weight: normal;
       font-size: 31px;
       font-family: OpenSansBold, sans-serif;
       margin-bottom: 12px;
-      color: #0D0D0D;
-
+      color: $brand-black;
+    }
+    h6 {
+      @media #{$sm} {
+        font-size: 28px;
+        margin-top: 0;
+      }
     }
     p {
       font-size: 20px;
-      color: #0D0D0D;
+      color: $brand-black;
       margin-bottom: 44px;
+      @media #{$sm} {
+        font-size: 18px;
+        max-width: 315px;
+        margin-bottom: 34px;
+      }
     }
     span {
       display: block;
@@ -214,13 +288,18 @@
       text-align: center;
       font-family: OpenSansBold, sans-serif;
       font-size: 20px;
-      color: #fff;
+      color: $brand-white;
       background: #FC6526;
       padding: 13px 5px;
       cursor: pointer;
       transition: 0.3s;
       &:hover {
-        background: #ED5A1C;
+        background: $brand-orange-hover;
+      }
+      @media #{$xs} {
+        width: 100%;
+        max-width: 260px;
+        margin: auto;
       }
     }
   }
@@ -228,8 +307,11 @@
 
 .sec-lvl-7 {
   margin-bottom: 110px;
+  @media #{$xs} {
+    margin-bottom: 60px;
+  }
   h2 {
-    color: #0D0D0D;
+    color: $brand-black;
     font-size: 30px;
     font-weight: normal;
     font-family: OpenSansBold, sans-serif;
@@ -239,8 +321,14 @@
   .for-flex-alighn {
     display: flex;
     align-items: center;
+    @media #{$xs} {
+      display: block;
+    }
     img {
       margin: 0 auto;
+      @media #{$xs} {
+        margin: 0 auto 10px auto;
+      }
     }
   }
 }
@@ -252,10 +340,13 @@
   padding: 30px 0;
   .subscribe-text {
     font-size: 31px;
-    color: #fff;
+    color: $brand-white;
     font-family: OpenSansBold, sans-serif;
     margin-bottom: 44px;
     text-align: center;
+    @media #{$xs} {
+      font-size: 20px;
+    }
   }
   form {
     display: flex;
@@ -264,15 +355,18 @@
     .form-field {
       width: 100%;
       display: block;
-      background: #fff;
+      background: $brand-white;
       outline: none;
-      border: 1px solid #E3E3E3;
+      border: 1px solid $brand-gray;
       border-right: none;
       padding: 10px 16px;
       font-size: 16px;
       border-top-left-radius: 6px !important;
       border-bottom-left-radius: 6px !important;
       font-family: OpenSansRegular, sans-serif;
+      @media #{$xs} {
+        font-size: 14px;
+      }
       &::-webkit-input-placeholder {
         color: #ABACB0;
       }
@@ -294,25 +388,32 @@
       outline: none;
       flex-shrink: 0;
       display: block;
-      color: #fff;
+      color: $brand-white;
       font-size: 16px;
       font-family: OpenSansBold, sans-serif;
       text-align: center;
       background: #FC6526;
       transition: 0.3s;
       &:hover {
-        background: #ED5A1C;
+        background: $brand-orange-hover;
+      }
+      @media #{$xs} {
+        width: 110px;
+        font-size: 13px;
       }
     }
   }
   .policy {
     text-align: center;
     font-family: OpenSansRegular, sans-serif;
-    color: #fff;
+    color: $brand-white;
     font-size: 12px;
     a {
       text-decoration: underline;
-      color: #fff;
+      color: $brand-white;
+      @media #{$xs} {
+        white-space: nowrap;
+      }
     }
   }
 }
@@ -329,9 +430,9 @@
         .butt-1 {
           background: #38AAEB;
           box-shadow: 0px 4px 6px rgba(30, 129, 186, 0.3);
-          color: #fff;
+          color: $brand-white;
           span {
-            color: #fff;
+            color: $brand-white;
           }
         }
 
@@ -367,9 +468,11 @@
       a {
         font-size: 17px;
         display: block;
-        color: #0D0D0D;
+        color: $brand-black;
         margin-bottom: 12px;
-
+        @media #{$lg} {
+          font-size: 15px;
+        }
       }
 
     }

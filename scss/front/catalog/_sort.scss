@@ -5,16 +5,33 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
+  @media #{$lg} {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 35px;
+  }
+  @media #{$xs} {
+    display: none;
+  }
 
   &__result {
     font-size: 16px;
     color: $brand-black;
     font-family: $OPS-R, sans-serif;
+    @media #{$lg} {
+      margin-bottom: 10px;
+    }
   }
 
   &__variant {
     display: flex;
     align-items: center;
+    @media #{$lg} {
+      width: 100%;
+    }
+    @media #{$sm} {
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -24,7 +41,14 @@
     display: block;
     cursor: pointer;
     margin-left: 32px;
-
+    @media #{$lg} {
+      margin-left: 0;
+      margin-right: 32px;
+    }
+    @media #{$sm} {
+      margin: 0;
+      font-size: 12px;
+    }
 
     &__label {
       padding-left: 20px;
@@ -128,6 +152,14 @@
     display: flex;
     align-items: center;
     margin-left: 24px;
+    @media #{$lg} {
+      flex: 1;
+      justify-content: flex-end;
+    }
+    @media #{$sm} {
+      margin-left: 0;
+      flex: 0;
+    }
   }
 
   &__toggle-item {
@@ -163,6 +195,12 @@
 
     &:hover {
       background: $brand-gray-hover;
+    }
+
+    @media #{$sm} {
+      &:first-child {
+        margin: 0;
+      }
     }
   }
 }

@@ -20,7 +20,7 @@
   }
   input {
     width: 100%;
-    border: 1px solid #E3E3E3;
+    border: 1px solid $brand-gray;
     display: block;
     font-family: OpenSansRegular, sans-serif;
     padding: 7px 16px;
@@ -46,7 +46,7 @@
   }
   textarea {
     width: 100%;
-    border: 1px solid #E3E3E3;
+    border: 1px solid $brand-gray;
     display: block;
     font-family: OpenSansRegular, sans-serif;
     padding: 7px 16px;
@@ -75,10 +75,18 @@
   .buttons-wrapp {
     display: flex;
     padding-top: 24px;
+    @media #{$xs} {
+      display: block;
+    }
     .for-padd {
       width: 180px;
       flex-shrink: 0;
       padding-right: 12px;
+      @media #{$xs} {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
+      }
       button {
         display: block;
         width: 100%;
@@ -86,13 +94,13 @@
         font-size: 14px;
         font-family: OpenSansBold, sans-serif;
         border-radius: 3px;
-        background: #F77640;
-        color: #fff;
+        background: $brand-orange;
+        color: $brand-white;
         padding: 12px 0;
         outline: none;
         transition: 0.3s;
         &:hover {
-          background: #ED5A1C;
+          background: $brand-orange-hover;
         }
       }
     }
@@ -103,7 +111,7 @@
       font-size: 13px;
       font-family: OpenSansBold, sans-serif;
       text-align: center;
-      color: #F77640;
+      color: $brand-orange;
       padding: 12px 0;
       border-radius: 3px;
       &.show {

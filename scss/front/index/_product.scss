@@ -2,16 +2,25 @@
 
 .sec-product {
   padding: 70px 0 75px 0;
+  @media #{$sm} {
+    padding: 120px 0 75px 0;
+  }
+  @media #{$xs} {
+    padding-bottom: 60px;
+  }
   .subheader {
     margin: 0;
     padding: 0;
     padding-bottom: 12px;
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid $brand-gray;
     margin-bottom: 30px;
     &__bread {
       margin: 0;
       margin-top: 10px;
       padding: 0;
+      @media #{$sm} {
+        margin-top: 0;
+      }
       .bread {
         list-style: none;
         margin: 0;
@@ -46,7 +55,7 @@
             padding-left: 0;
           }
           &:last-child {
-            color: #F77640;
+            color: $brand-orange;
             font-size: 13px;
             font-family: OpenSansRegular, sans-serif;
           }
@@ -57,8 +66,11 @@
       margin: 0;
       padding: 0;
       position: relative;
+      @media #{$sm} {
+        margin-top: 15px;
+      }
       input {
-        border: 1px solid #E3E3E3;
+        border: 1px solid $brand-gray;
         display: block;
         font-family: OpenSansRegular, sans-serif;
         padding: 7px 50px 7px 16px;
@@ -66,6 +78,15 @@
         width: 390px;
         border-radius: 2px;
         font-size: 14px;
+        @media #{$lg} {
+          width: 310px;
+        }
+        @media #{$sm} {
+          width: 340px;
+        }
+        @media #{$xs} {
+          width: 168px;
+        }
         &::-webkit-input-placeholder {
           color: #ABACB0;
         }
@@ -92,6 +113,12 @@
         background-repeat: no-repeat;
         background-position: center;
         outline: none;
+        @media #{$sm} {
+          left: 293px;
+        }
+        @media #{$xs} {
+          left: 122px;
+        }
       }
       &--notFound {
         float: right;
@@ -124,6 +151,9 @@
     }
     .slider-bott-wr {
       padding: 20px 25px;
+      @media #{$xs} {
+        padding: 20px;
+      }
       .slick-arrow {
         display: block;
         position: absolute;
@@ -178,7 +208,7 @@
     }
   }
   .logo-element {
-    border: 1px solid #E3E3E3;
+    border: 1px solid $brand-gray;
     font-size: 16px;
     line-height: 22px;
     font-family: OpenSansBold, sans-serif;
@@ -194,6 +224,9 @@
       .logo-element__image {
         height: 80px;
         max-width: 110px;
+        @media #{$lg} {
+          height: 70px;
+        }
       }
     }
     &__description {
@@ -216,14 +249,14 @@
   .product-list-info {
     margin: 0;
     list-style: none;
-    border: 1px solid #E3E3E3;
+    border: 1px solid $brand-gray;
     margin-bottom: 16px;
     padding: 0;
     li {
-      border-bottom: 1px solid #E3E3E3;
+      border-bottom: 1px solid $brand-gray;
       font-size: 16px;
       font-family: OpenSansRegular, sans-serif;
-      color: #0D0D0D;
+      color: $brand-black;
       padding: 10px 12px;
       &:last-child {
         border: none;
@@ -254,10 +287,20 @@
     background-repeat: no-repeat;
     padding-bottom: 2px;
     background-position: top left;
+    @media #{$xs} {
+      background-position: center left;
+      margin-bottom: 20px;
+    }
   }
   .main-product-description {
+    @media #{$xs} {
+      margin-bottom: 30px;
+    }
     .product-upper {
       margin-bottom: 47px;
+      @media #{$sm} {
+        margin-bottom: 0;
+      }
     }
     .product-bottom {
 
@@ -268,14 +311,14 @@
         font-family: OpenSansRegular, sans-serif;
         font-size: 16px;
         line-height: 22px;
-        color: #0D0D0D;
+        color: $brand-black;
         margin: 0;
       }
       &__volume {
         font-family: OpenSansSemiBold, sans-serif;
         font-size: 20px;
         line-height: 22px;
-        color: #0D0D0D;
+        color: $brand-black;
         margin: 0;
       }
       &__volume--not-available {
@@ -283,7 +326,7 @@
       }
     }
     .item-prices-options {
-      color: #0D0D0D;
+      color: $brand-black;
       .item-prices-options__row {
         font-family: OpenSansRegular, sans-serif;
         font-size: 16px;
@@ -303,18 +346,21 @@
     }
     h1, h2, h3, h4, h5, h6 {
       font-size: 30px;
-      color: #0D0D0D;
+      color: $brand-black;
       font-weight: normal;
       font-family: OpenSansBold, sans-serif;
       margin-bottom: 24px;
       margin-top: 0;
+      @media #{$lg} {
+        font-size: 24px;
+      }
     }
     .pick-delivery-text {
       font-family: OpenSansSemiBold, sans-serif;
-      color: #0D0D0D;
+      color: $brand-black;
       margin-bottom: 8px;
       padding-top: 11px;
-      border-top: 1px solid #E3E3E3;
+      border-top: 1px solid $brand-gray;
       span {
         font-size: 13px;
         color: #929396;
@@ -337,15 +383,18 @@
     .price {
       white-space: nowrap;
       font-size: 28px;
-      color: #0D0D0D;
+      color: $brand-black;
       font-family: OpenSansBold, sans-serif;
       margin-bottom: 8px;
+      @media #{$lg} {
+        font-size: 24px;
+      }
       .grey {
         color: #929396;
         font-family: OpenSansRegular, sans-serif;
       }
       .orange {
-        color: #F77640;
+        color: $brand-orange;
       }
     }
     .descr-price {
@@ -354,18 +403,18 @@
       margin-bottom: 32px;
       color: #929396;
       .orange {
-        color: #F77640;
+        color: $brand-orange;
       }
     }
     .size-delivery-text {
-      color: #0D0D0D;
+      color: $brand-black;
       font-family: OpenSansRegular, sans-serif;
       margin-bottom: 5px;
     }
     .size-delivery {
       font-size: 21px;
       font-family: OpenSansBold, sans-serif;
-      color: #0D0D0D;
+      color: $brand-black;
       padding-bottom: 8px;
       margin-bottom: 30px;
       span.hinter {
@@ -393,14 +442,18 @@
             width: 120px;
             outline: none;
             padding: 2px 0 2px 12px;
-            background: #fff;
+            background: $brand-white;
             border-radius: 2px;
             font-size: 24px;
             font-family: OpenSansBold, sans-serif;
-            color: #0D0D0D;
-            border: 1px solid #E3E3E3;
+            color: $brand-black;
+            border: 1px solid $brand-gray;
             margin-bottom: 6px;
             margin-left: 0;
+            @media #{$xs} {
+              width: 103px;
+              font-size: 22px;
+            }
           }
           .descr-label {
             font-size: 12px;
@@ -411,7 +464,7 @@
         .kg {
           font-size: 24px;
           font-family: OpenSansRegular, sans-serif;
-          color: #0D0D0D;
+          color: $brand-black;
           padding-left: 8px;
         }
       }
@@ -425,7 +478,7 @@
           &__description {
             margin-top: 12px;
             margin-bottom: 12px;
-            color: #F77640;
+            color: $brand-orange;
             font-size: 16px;
             line-height: 22px;
           }
@@ -441,7 +494,7 @@
             margin: 0;
             font-size: 25px;
             line-height: 33px;
-            color: #0D0D0D;
+            color: $brand-black;
             white-space: normal;
             padding-right: 22px;
             position: relative;
@@ -459,16 +512,19 @@
         }
         .right-side {
           .how-m {
-            color: #F77640;
+            color: $brand-orange;
             font-family: OpenSansRegular, sans-serif;
           }
           .descr-no-vat {
             font-family: OpenSansRegular, sans-serif;
             font-size: 23px;
             line-height: 31px;
-            color: #0D0D0D;
+            color: $brand-black;
           }
         }
+      }
+      @media #{$lg} {
+        padding-right: 14px;
       }
     }
     .add-to-basket {
@@ -478,7 +534,7 @@
       text-align: center;
       font-family: OpenSansBold, sans-serif;
       font-size: 26px;
-      color: #fff;
+      color: $brand-white;
       background: #FC6526;
       padding: 13px 5px;
       cursor: pointer;
@@ -486,7 +542,10 @@
       border: none;
       outline: none;
       &:hover {
-        background: #ED5A1C;
+        background: $brand-orange-hover;
+      }
+      @media #{$lg} {
+        font-size: 20px;
       }
     }
   }
@@ -494,9 +553,16 @@
     padding: 10px 10px 0;
     background-color: #F4F4F5;
     margin-top: -30px;
+    @media #{$xs} {
+      display: block;
+      .for-sm-inline {
+        width: 100%;
+        padding: 0 !important;
+      }
+    }
     .title-block {
       margin-bottom: 16px;
-      color: #0D0D0D;
+      color: $brand-black;
     }
     .title-block a {
       color: inherit;
@@ -520,7 +586,7 @@
       outline: none;
       margin-bottom: 10px;
       &:hover {
-        background: #ED5A1C;
+        background: $brand-orange-hover;
       }
     }
     .list-services-vers-1 {
@@ -557,7 +623,7 @@
           margin-bottom: 12px;
 
           .one-service {
-            background-color: #fff;
+            background-color: $brand-white;
             height: 110px;
             display: flex;
             justify-content: center;
@@ -568,6 +634,9 @@
             cursor: pointer;
             &:hover {
               background-color: #E4EBF5;
+              @media #{$sm} {
+                background: rgba(245, 248, 252, 0.8);
+              }
             }
             img {
               margin-bottom: 12px;
@@ -577,8 +646,14 @@
               display: block;
               font-size: 12px;
               font-family: OpenSansRegular, sans-serif;
-              color: #0D0D0D;
+              color: $brand-black;
               text-align: center;
+              @media #{$lg} {
+                font-size: 10px;
+              }
+              @media #{$sm} {
+                font-size: 12px;
+              }
             }
           }
 
@@ -591,10 +666,10 @@
       list-style: none;
       padding: 0;
       margin: 0;
-      border: 1px solid #E3E3E3;
+      border: 1px solid $brand-gray;
       margin-bottom: 30px;
       li {
-        border-bottom: 1px solid #E3E3E3;
+        border-bottom: 1px solid $brand-gray;
         padding: 12px;
         cursor: pointer;
         transition: 0.3s;
@@ -655,15 +730,22 @@
           flex-shrink: 0;
           background-size: cover;
           background-position: center;
+          @media #{$lg} {
+            width: 75px;
+            height: 75px;
+          }
         }
         .description {
           width: 100%;
           padding-left: 15px;
+          @media #{$lg} {
+            padding-left: 10px;
+          }
           a {
             display: block;
             font-size: 13px;
             font-family: OpenSansBold, sans-serif;
-            color: #0D0D0D;
+            color: $brand-black;
             margin-bottom: 5px;
           }
           p {
@@ -682,6 +764,10 @@
   .tags-wrapper {
     margin-top: 44px;
     margin-bottom: 20px;
+    @media #{$sm} {
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
     &__image {
       padding: 19px 0;
       margin-right: 12px;
@@ -697,14 +783,17 @@
     }
     &__text {
       margin-right: 18px;
-      color: #F77640;
+      color: $brand-orange;
       line-height: 22px;
-      border-bottom: 1px solid #F77640;
+      border-bottom: 1px solid $brand-orange;
     }
   }
   .contentAfter-wrapper {
-    color: #0D0D0D;
+    color: $brand-black;
     font-size: 13px;
     font-family: OpenSansRegular, sans-serif;
+    @media #{$sm} {
+      margin-bottom: 22px;
+    }
   }
 }

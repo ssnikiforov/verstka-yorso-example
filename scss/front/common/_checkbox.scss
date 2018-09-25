@@ -22,8 +22,8 @@
       width: 12px;
       height: 12px;
       border-radius: 2px;
-      border: 1px solid #F77640;
-      background: #fff;
+      border: 1px solid $brand-orange;
+      background: $brand-white;
       position: relative;
       margin-bottom: 0;
       margin-top: 2px;
@@ -42,7 +42,7 @@
       }
     }
     .checkbox:checked + label {
-      background-color: #F77640;
+      background-color: $brand-orange;
       &:before {
         opacity: 1;
       }

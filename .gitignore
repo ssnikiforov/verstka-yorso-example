@@ -1,6 +1,5 @@
 node_modules/
 package-lock.json
-package.json
 .babelrc
 gulpfile.babel.js
 
@@ -43,7 +42,6 @@ app/scripts/shell/runBlockchain.sh
 build.xml
 cache.properties
 app/scripts/cbr/*.zip
-node_modules/
 .module-cache/
 config.php
 GPATH

@@ -5,6 +5,9 @@
   top: 58px;
   left: 0;
   width: 100%;
+  @media #{$sm} {
+    top: 93px;
+  }
   &.add-fixed {
     position: fixed;
     top: 0;
@@ -16,6 +19,12 @@
     top: 53px;
     z-index: 9;
     transition: top 1s;
+    @media #{$sm} {
+      top: 100px;
+    }
+    @media #{$xs} {
+      top: 43px;
+    }
   }
   .relative-wrapp {
     position: relative;
@@ -26,6 +35,9 @@
     z-index: 20;
     padding: 16px;
     border-radius: 6px;
+    @media #{$xs} {
+      width: 280px;
+    }
     .icon {
       background-position: center;
       background-repeat: no-repeat;
@@ -34,7 +46,7 @@
       height: 28px;
       flex-shrink: 0;
       margin-right: 10px;
-      background-color: #fff;
+      background-color: $brand-white;
     }
     p {
       font-family: OpenSansSemiBold, sans-serif;

@@ -12,13 +12,13 @@ footer {
     }
   }
   a:hover {
-    color: #F77640 !important;
+    color: $brand-orange !important;
   }
 
   .country {
     font-family: OpenSansRegular, sans-serif;
     font-size: 15px;
-    color: #fff;
+    color: $brand-white;
     padding: 0 0 2px 25px;
     background-repeat: no-repeat;
     background-position: center left;
@@ -32,6 +32,10 @@ footer .top-side-footer {
   padding: 10px 0;
   align-items: center;
 
+  @media #{$lg} {
+    display: block;
+  }
+
   .soc-links {
     flex-shrink: 0;
     display: flex;
@@ -42,8 +46,19 @@ footer .top-side-footer {
     a {
       display: block;
       padding: 0 4px;
-
+      @media #{$sm} {
+        padding: 0 3px;
+      }
     }
+    @media #{$sm} {
+      padding-right: 0;
+    }
+  }
+}
+
+footer .top-side-footer .for-border-r {
+  @media #{$xs} {
+    width: 100%;
   }
 }
 
@@ -60,14 +75,28 @@ footer .top-side-footer .for-border-r .subscribe-text {
   text-decoration: underline;
   margin-right: 44px;
   &:hover {
-    color: #F77640;
+    color: $brand-orange;
+  }
+  @media #{$sm} {
+    margin-right: 10px;
+  }
+  @media #{$xs} {
+    margin-bottom: 10px;
   }
 }
 
 footer .top-side-footer .left-side {
-  width: 58%;
+  width: 100%;
   display: flex;
   align-items: center;
+  @media #{$lg} {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  @media #{$xs} {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 footer .top-side-footer .left-side .email {
@@ -76,6 +105,10 @@ footer .top-side-footer .left-side .email {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
   margin-right: 17px;
+  @media #{$xs} {
+    margin-bottom: 5px;
+    width: 100%;
+  }
   a {
     color: #EE802F;
     font-size: 15px;
@@ -89,20 +122,31 @@ footer .top-side-footer .left-side .call {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.5);
   margin-right: 30px;
+  @media #{$sm} {
+    margin-right: 0;
+  }
+  @media #{$xs} {
+    margin-right: auto;
+    transform: translateX(-5px);
+  }
   a {
     padding: 0 8px;
     font-family: OpenSansBold, sans-serif;
-    color: #fff;
+    color: $brand-white;
     font-size: 15px;
     border-right: 1px solid rgba(255, 255, 255, 0.16);
     &:last-child {
       border: none;
     }
+    @media #{$sm} {
+      font-size: 12px;
+      padding: 0 5px;
+    }
+    @media #{$xs} {
+      padding: 0 7px;
+      font-size: 12px;
+    }
   }
-}
-
-footer .top-side-footer .left-side {
-  width: 100%;
 }
 
 footer .top-side-footer .right-side {
@@ -110,6 +154,13 @@ footer .top-side-footer .right-side {
   align-items: center;
   justify-content: flex-end;
   width: auto;
+  @media #{$lg} {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  @media #{$xs} {
+    display: block;
+  }
 }
 
 footer .top-side-footer .right-side .soc-links {
@@ -123,13 +174,27 @@ footer .top-side-footer .right-side .soc-links {
   a {
     display: block;
     padding: 0 4px;
-
+  }
+  @media #{$xs} {
+    width: auto;
+    border: none;
+    margin-bottom: 5px;
+    &:first-child {
+      padding-left: 0;
+    }
   }
 }
 
 footer .top-side-footer .right-side .for-border-r {
   padding: 0 10px;
   border-right: 1px solid rgba(255, 255, 255, 0.16);
+  @media #{$lg} {
+    border-right: none;
+  }
+  @media #{$xs} {
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
   .subscribe-text {
     cursor: pointer;
     padding-left: 22px;
@@ -142,7 +207,7 @@ footer .top-side-footer .right-side .for-border-r {
     white-space: nowrap;
     text-decoration: underline;
     &:hover {
-      color: #F77640 !important;
+      color: $brand-orange !important;
     }
   }
 }
@@ -152,11 +217,22 @@ footer .top-side-footer .right-side .footer-lang-list {
   list-style: none;
   display: flex;
   align-items: center;
+  @media #{$lg} {
+    margin-left: auto;
+  }
+  @media #{$xs} {
+    padding-left: 0;
+  }
   li {
     padding: 0 4.5px;
     border-right: 1px solid rgba(255, 255, 255, 0.16);
     &:last-child {
       border: none;
+    }
+    @media #{$xs} {
+      &:first-child {
+        padding-left: 0;
+      }
     }
     a {
       display: block;
@@ -165,7 +241,7 @@ footer .top-side-footer .right-side .footer-lang-list {
       color: rgba(255, 255, 255, 0.3);
       font-family: OpenSansRegular, sans-serif;
       &.active {
-        color: #fff;
+        color: $brand-white;
       }
     }
   }
@@ -174,6 +250,9 @@ footer .top-side-footer .right-side .footer-lang-list {
 footer .mid-side-footer {
   display: flex;
   padding: 20px 0;
+  @media #{$xs} {
+    display: block;
+  }
   .left-side {
     width: 35%;
     border-right: 1px solid rgba(255, 255, 255, 0.16);
@@ -187,7 +266,7 @@ footer .mid-side-footer {
         padding-left: 0;
       }
       li {
-        color: #fff;
+        color: $brand-white;
         font-family: OpenSansRegular, sans-serif;
         font-size: 15px;
         line-height: 20px;
@@ -212,7 +291,7 @@ footer .mid-side-footer {
         .num-t {
           font-size: 15px;
           font-family: OpenSansBold, sans-serif;
-          color: #fff;
+          color: $brand-white;
           padding-left: 14px;
           background-image: url('#{$assets-path}/img/tel-num.svg');
           background-repeat: no-repeat;
@@ -229,7 +308,7 @@ footer .mid-side-footer {
         .head-sec-col {
           font-family: OpenSansRegular, sans-serif;
           font-size: 15px;
-          color: #fff;
+          color: $brand-white;
           margin-bottom: 10px;
         }
         .req {
@@ -250,10 +329,98 @@ footer .mid-side-footer {
   }
 }
 
+footer .mid-side-footer .left-side {
+  @media #{$sm} {
+    width: 50%;
+  }
+  @media #{$xs} {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+  }
+}
+
+footer .mid-side-footer .left-side .menu-side {
+  @media #{$lg} {
+    padding-left: 10px;
+  }
+}
+
+footer .mid-side-footer .right-side {
+  @media #{$sm} {
+    width: 50%;
+    padding-left: 25px;
+  }
+  @media #{$xs} {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+footer .mid-side-footer .right-side .one-office {
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
+}
+
+footer .mid-side-footer .right-side .one-office .one-col {
+  @media #{$lg} {
+    padding-right: 22px;
+    &:first-child {
+      width: 185px;
+    }
+    .req {
+      font-size: 13px;
+    }
+    .num {
+      font-size: 15px;
+    }
+  }
+  @media #{$sm} {
+    width: 50%;
+    &:first-child {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .sec-product .other-products-wr {
+      display: flex;
+      margin-top: 0;
+      background-color: $brand-white;
+      .for-sm-inline {
+        width: 50%;
+        &:first-child {
+          padding-right: 15px;
+        }
+        &:last-child {
+          padding-left: 15px;
+        }
+      }
+      .list-services-vers-1 .one-row .padd-buttons .one-service {
+        border: 1px solid $brand-gray;
+      }
+    }
+  }
+  @media #{$xs} {
+    width: 100%;
+    padding-right: 0;
+    &:last-child {
+      padding-top: 17px;
+    }
+  }
+}
+
 footer .bot-side-footer {
   padding: 10px 0;
   display: flex;
   justify-content: flex-start;
+  @media #{$xs} {
+    display: block;
+    a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
 }
 
 footer .bot-side-footer p {
@@ -261,4 +428,7 @@ footer .bot-side-footer p {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.5);
   padding-left: 20px;
+  @media #{$xs} {
+    padding-left: 0;
+  }
 }

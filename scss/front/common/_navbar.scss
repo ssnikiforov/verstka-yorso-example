@@ -9,6 +9,13 @@
 }
 
 .navbar-toggle {
+  @media #{$xs} {
+    border: none;
+    right: auto;
+    left: 5px;
+    top: 27px;
+    z-index: 50;
+  }
   &[aria-expanded=true] {
     .icon-bar {
       &:nth-child(2) {
@@ -19,6 +26,9 @@
       }
       &:nth-child(4) {
         transform: rotate(-45deg) translateY(-8px);
+      }
+      @media #{$xs} {
+        background: #31365E;
       }
     }
   }

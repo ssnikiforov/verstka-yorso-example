@@ -2,12 +2,19 @@
 
 .sec-regions {
   padding-top: 57px;
+  @media #{$sm} {
+    padding-top: 93px;
+  }
   h1 {
     font-weight: normal;
     font-size: 30px;
     margin-bottom: 50px;
     margin-top: 32px;
     font-family: OpenSansBold, sans-serif;
+    @media #{$xs} {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
   }
   h3 {
     font-size: 20px;
@@ -15,7 +22,7 @@
     padding-bottom: 12px;
     margin: 0;
     margin-bottom: 16px;
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid $brand-gray;
   }
   .flex-flags {
     padding: 0;
@@ -27,16 +34,22 @@
     &:last-child {
       margin-bottom: 20px;
     }
+    @media #{$xs} {
+      margin-bottom: 42px;
+    }
     li {
       width: 16.66%;
       margin-bottom: 25px;
       padding-right: 10px;
+      @media #{$xs} {
+        width: 50%;
+      }
       a, span {
         cursor: pointer;
         display: block;
         font-size: 16px;
         font-family: OpenSansRegular, sans-serif;
-        color: #0D0D0D;
+        color: $brand-black;
         padding: 2px 0 2px 50px;
         background: no-repeat center left;
         background-size: 40px;

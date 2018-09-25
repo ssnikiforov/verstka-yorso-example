@@ -1,3 +1,5 @@
+@import "../variables";
+
 .cookies-wrapp {
   position: fixed;
   z-index: 10;
@@ -5,7 +7,7 @@
   left: 0;
   width: 100%;
   .cookies-contant {
-    background: #fff;
+    background: $brand-white;
     border-top: 1px solid #7C7E82;
     .relative-wr {
       position: relative;
@@ -17,6 +19,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media #{$xs} {
+        display: block;
+        padding: 8px 0;
+      }
       .policy {
         margin-bottom: 0;
         font-family: OpenSansRegular, sans-serif;
@@ -24,6 +30,11 @@
         background-repeat: no-repeat;
         background-position: center left;
         padding: 3px 10px 3px 32px;
+        @media #{$xs} {
+          margin-bottom: 10px;
+          padding-right: 15px;
+          padding-left: 36px;
+        }
       }
       .butt-groupe {
         display: flex;
@@ -33,6 +44,12 @@
       .close-cookie {
         position: absolute;
         right: 0;
+        @media #{$xs} {
+          &.close-x {
+            top: 18px;
+            transform: none;
+          }
+        }
       }
       .later {
         background: transparent;
@@ -45,17 +62,23 @@
         padding: 6px 14px;
         font-family: OpenSansRegular, sans-serif;
         margin-right: 16px;
+        @media #{$xs} {
+          padding: 2px 14px;
+        }
       }
       .read {
         font-family: OpenSansSemiBold, sans-serif;
         font-size: 13px;
         padding: 6px 14px;
-        color: #fff;
+        color: $brand-white;
         background: #FC6526;
         border: none;
         border-radius: 2px;
         outline: none;
         display: block;
+        @media #{$xs} {
+          padding: 2px 14px;
+        }
       }
     }
   }

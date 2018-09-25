@@ -22,7 +22,7 @@
     text-align: center;
     font-family: OpenSansBold, sans-serif;
     font-size: 15px;
-    color: #fff;
+    color: $brand-white;
     background: #FC6526;
     padding: 10px 5px;
     cursor: pointer;
@@ -31,7 +31,7 @@
     outline: none;
     margin-top: 20px;
     &:hover {
-      background: #ED5A1C;
+      background: $brand-orange-hover;
       text-decoration: none;
     }
   }
