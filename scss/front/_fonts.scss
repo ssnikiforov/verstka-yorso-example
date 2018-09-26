@@ -1,0 +1,28 @@
+@import "variables";
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url('#{$assets-path}/fonts/OpenSansRegular.eot');
+  src: url('#{$assets-path}/fonts/OpenSansRegular.woff') format("woff"),
+  url('#{$assets-path}/fonts/OpenSansRegular.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url('#{$assets-path}/fonts/OpenSansSemiBold.eot');
+  src: url('#{$assets-path}/fonts/OpenSansSemiBold.woff') format("woff"),
+  url('#{$assets-path}/fonts/OpenSansSemiBold.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url('#{$assets-path}/fonts/OpenSansBold.eot');
+  src: url('#{$assets-path}/fonts/OpenSansBold.woff') format("woff"),
+  url('#{$assets-path}/fonts/OpenSansBold.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
