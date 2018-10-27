@@ -1,0 +1,595 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yorso</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="temp/product/slick.css" rel="stylesheet">
+    <link href="temp/product/style.css" rel="stylesheet">
+    <link href="temp/product/media.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--фиксированное меню-->
+    <div class="head-menu fixed-menu ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="flex-menu">
+                        <div class="left-side">
+                            <a class="logo-wr" href="#">
+                                <img src="img/logo-black.svg" class="img-respinsive" alt="">
+                            </a>
+                            <a href="#" class="tel-number">+7 (499) 703-32-24</a>
+                        </div>
+                        <div class="mid-side">
+                            <form class="search-form">
+                                <input type="text" placeholder="Я ищу...">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                        <div class="right-side">
+                            <div class="lang-wrapp">
+                                <div class="lang">
+                                    <img src="img/RU-flag.svg" class="img-responsive" alt="">
+                                    Ru
+                                </div>
+                                <div class="lang-list">
+                                    <div class="hidden-list">
+                                        <a href="#" class="en">En</a>
+                                        <a class="active ru">Ru</a>
+                                        <a href="#" class="es">Es</a>
+                                        <a href="#" class="fr">FR</a>
+                                        <a href="#" class="it">IT</a>
+                                        <a href="#" class="de">DE</a>
+                                        <a href="#" class="cn">CN</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other-links-wr">
+                                <!--добавляем класс active для другого стиля-->
+                                <a href="#" class="profile active other-links">Профиль</a>
+                                <div class="count">
+                                    <span>3</span>
+                                </div>
+                                <div class="hover-wr-list">
+                                    <ul class="hidden-list">
+                                        <li>
+                                            <a href="#">ЗАКАЗЫ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">НАСТРОЙКИ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">АДМИНИСТРИРОВАНИЕ</a>    
+                                        </li>
+                                         <li>
+                                            <a href="#">ЗАЙТИ ПОД СВОИМ ПОЛЬЗОВАТЕЛЕМ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">МЕНЕДЖЕР ПО ПРОДАЖАМ</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">ЛОГИСT</a>    
+                                        </li>
+                                        <li>
+                                            <a href="#">SEO МЕНЕДЖЕР</a>    
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="other-links-wr">
+                                <a href="#" class="basket other-links">Корзина</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <section class="all-content">
+        <div class="for-flex-height">
+            <!--статичное меню-->
+            <div class="head-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="flex-menu">
+                                <div class="left-side">
+                                    <a class="logo-wr" href="#">
+                                        <img src="img/logo-blue.svg" class="img-respinsive" alt="">
+                                    </a>
+                                    <a href="#" class="tel-number">+7 (499) 703-32-24</a>
+                                </div>
+                                <div class="mid-side">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fixed-menu">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="fixed-menu">
+                                        <ul class="menu-list">
+                                            <li class="first-itm">
+                                                <a class="for-js-code" href="#">Как это работает</a>
+                                            </li>
+                                            <li class="first-itm">
+                                                <a class="for-js-code" href="#">Покупателям</a>
+                                            </li>
+                                            <li class="first-itm">
+                                                <a class="for-js-code" href="#">Поставщикам</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="right-side">
+                                    <div class="lang-wrapp">
+                                        <div class="lang">
+                                            <img src="img/RU-flag.svg" class="img-responsive" alt="">
+                                            Ru
+                                        </div>
+                                        <div class="lang-list">
+                                            <div class="hidden-list">
+                                                <a href="#" class="en">En</a>
+                                                <a class="active ru">Ru</a>
+                                                <a href="#" class="es">Es</a>
+                                                <a href="#" class="fr">FR</a>
+                                                <a href="#" class="it">IT</a>
+                                                <a href="#" class="de">DE</a>
+                                                <a href="#" class="cn">CN</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="other-links-wr">
+                                        <a href="#" class="profile active other-links">Профиль</a>
+                                        <div class="count">
+                                            <span>3</span>
+                                        </div>
+                                        <div class="hover-wr-list">
+                                            <ul class="hidden-list">
+                                                <li>
+                                                    <a href="#">ЗАКАЗЫ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">НАСТРОЙКИ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">АДМИНИСТРИРОВАНИЕ</a>    
+                                                </li>
+                                                 <li>
+                                                    <a href="#">ЗАЙТИ ПОД СВОИМ ПОЛЬЗОВАТЕЛЕМ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">МЕНЕДЖЕР ПО ПРОДАЖАМ</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">ЛОГИСT</a>    
+                                                </li>
+                                                <li>
+                                                    <a href="#">SEO МЕНЕДЖЕР</a>    
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="other-links-wr">
+                                        <a href="#" class="basket other-links">Корзина</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="sec-product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="bread">
+                                <li>
+                                    <a href="#">Yorso</a>
+                                </li>
+                                <li>
+                                    <a href="#">Рыба и морепродукты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Тюлька</a>
+                                </li>
+                                <li>
+                                   Тюлька, СМ, 12 НР, 1/24
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6">
+                            <p class="hidden-lg hidden-md hidden-sm on-xs-header">Тунец (Bullet Tuna HGT), тушка, см, 150+, 1/30</p>
+                            <div class="sliders-wrapper">
+                                <div class="slider-top-wr">
+                                    <div class="slider-top-init">
+                                        <div class="slide">
+                                            <div class="image" style="background-image: url(img/tunec.jpg)"></div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="image" style="background-image: url(img/tunec.jpg)"></div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="image" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="image" style="background-image: url(img/tunec.jpg)"></div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="slider-bott-wr">
+                                    <div class="slider-bott-init">
+                                        <!--количество и порядок слайдов аналогично с slider-top-init -->
+                                        <div class="slide">
+                                            <div class="img-before">
+                                                 <div class="image" style="background-image: url(img/tunec.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="img-before">
+                                                 <div class="image" style="background-image: url(img/tunec.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="img-before">
+                                                <div class="image" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <div class="img-before">
+                                                 <div class="image" style="background-image: url(img/tunec.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="product-list-info">
+                                <li>Производство: СТРМ “Юмир” (Россия)</li>
+                                <li>Дата выработки: 2018 г.</li>
+                                <li>Тип разделки: потрошеная без головы</li>
+                                <li>Средний размер: 25+</li>
+                                <li>Вес тары: 1/18 (мешок)</li>
+                                <li>Тип заморозки: BQF (блочная заморозка)</li>
+                                <li>Глазировка: 5%</li>
+                            </ul>
+                            <p class="poss-delivery">Осуществляем доставку до склада клиента</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <!--можено сменить div на form, как удобней-->
+                            <div class="main-product-description">
+                                <h1 class="hidden-xs">Тунец (Bullet Tuna HGT), тушка, см, 150+, 1/30</h1>
+                                <p class="pick-delivery-text">Выберите базис поставки <span>доступно <span>3</span></span></p>
+                                <select>
+                                    <option>CFR порт Санкт-Петербург</option>
+                                    <option>CFR порт Санкт-Петербург 2</option>
+                                    <option>CFR порт Санкт-Петербург 3</option>
+                                </select>
+                                <p class="price">1.2$ / кг <span class="grey">-</span> 1.888$ / кг <span class="orange">*</span></p>
+                                <p class="descr-price"><span class="orange">*</span> Цена зависит от базиса поставки</p>
+                                <p class="size-delivery-text">Размер партии</p>
+                                <p class="size-delivery"><span>От</span> 27 000 кг <span>До</span> 314 000 кг</p>
+                                <div class="pick-size-delivery-wr">
+                                    <div class="left-side">
+                                        <div class="inp">
+                                            <input type="number" value="27000" min="27000" inputmode="numeric" pattern="[0-9]*">
+                                            <p class="descr-label">Размер партии</p>
+                                        </div>
+                                        <span class="kg">кг</span>
+                                    </div>
+                                    <div class="right-side">
+                                        <div class="for-flex-icon-r">
+                                            <p class="how-m">1 650 000</p>
+                                        </div>
+                                        <p class="descr-label">Стоимость партии,<br>В т.ч. НДС 150 000</p>
+                                    </div>
+                                </div>
+                                <button class="add-to-basket">Добавить в корзину</button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="other-products-wr">
+                                <div class="for-sm-inline">
+                                    <p class="title-block">Дополнительные услуги</p>
+                                    <div class="list-services-vers-1">
+                                        <div class="one-row">
+                                            
+                                            <div class="padd-buttons">
+                                                <div class="one-service">
+                                                    <img src="img/serv-1.svg" class="img-responsive" alt="">
+                                                    <!--могут быть ссылками, если ссылки - надо внести эти one-service в выборку в скриптах 39 строка-->
+                                                    <p>Софинансирование</p>
+                                                </div>
+                                            </div>
+                                            <div class="padd-buttons">
+                                                <div class="one-service">
+                                                    <img src="img/serv-2.svg" class="img-responsive" alt="">
+                                                    <p>Доставка товара</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="one-row">
+                                            <div class="padd-buttons">
+                                                <div class="one-service">
+                                                    <img src="img/serv-3.svg" class="img-responsive" alt="">
+                                                    <p>Подписка на товар</p>
+                                                </div>
+                                            </div>
+                                            <div class="padd-buttons">
+                                                <div class="one-service">
+                                                    <img src="img/serv-4.svg" class="img-responsive" alt="">
+                                                    <p>Таможенное оформление</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="for-sm-inline">
+                                    <p class="title-block">Похожие товары</p>
+                                    <div class="other-products">
+                                        <div class="one-block">
+                                            <div class="img-prod" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                            <div class="description">
+                                                <a href="#">Филе минтая см, б/к, 5%</a>
+                                                <p>Размерный ряд: <span>6-8</span></p>
+                                                <p>CFR порт Санкт-Петербург</p>
+                                            </div>
+                                        </div>
+                                        <div class="one-block">
+                                            <div class="img-prod" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                            <div class="description">
+                                                <a href="#">Филе минтая см, б/к, 5%</a>
+                                                <p>Размерный ряд: <span>6-8</span></p>
+                                                <p>CFR порт Санкт-Петербург</p>
+                                            </div>
+                                        </div>
+                                        <div class="one-block">
+                                            <div class="img-prod" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                            <div class="description">
+                                                <a href="#">Филе минтая см, б/к, 5%</a>
+                                                <p>Размерный ряд: <span>6-8</span></p>
+                                                <p>CFR порт Санкт-Петербург</p>
+                                            </div>
+                                        </div>
+                                        <div class="one-block">
+                                            <div class="img-prod" style="background-image: url(img/main-baner-bg.jpg)"></div>
+                                            <div class="description">
+                                                <a href="#">Филе минтая см, б/к, 5%</a>
+                                                <p>Размерный ряд: <span>6-8</span></p>
+                                                <p>CFR порт Санкт-Петербург</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="bordered">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="top-side-footer">
+                                <div class="left-side">
+                                    <span class="email">e-mail: <a href="#">info@yorso.com</a></span>
+                                    <span class="call">
+                                        мессенджеры: 
+                                        <a href="#">Telegram</a>
+                                        <a href="#">Viber</a>
+                                        <a href="#">WhatsApp</a>
+                                    </span>
+                                </div>
+                                <div class="right-side">
+                                    <div class="soc-links">
+                                        <a href="#">
+                                            <img src="img/Twitter.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/Facebook.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/Linked.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/VK.svg" class="img-responsive" alt="">
+                                        </a>
+                                        <a href="#">
+                                            <img src="img/G.svg" class="img-responsive" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="for-border-r">
+                                        <p class="subscribe-text">Подпишитесь на обновления</p>
+                                    </div>
+                                    <ul class="footer-lang-list">
+                                        <li>
+                                            <a href="#">EN</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="active">RU</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">ES</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FR</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">IT</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DE</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">CN</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bordered">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mid-side-footer">
+                                <div class="left-side">
+                                    <ul class="menu-side">
+                                        <li>Компания</li>
+                                        <li>
+                                            <a href="#">О нас</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Связаться с нами</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Политика cookies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Персональные данные</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Вопросы и ответы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Контакты</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu-side">
+                                        <li>Продукты и услуги</li>
+                                        <li>
+                                            <a href="#">Главная</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Каталог товаров</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Как это работает</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Покупателям</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Поставщикам</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Оплата и доставка</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="right-side">
+                                    <div class="one-office">
+                                        <div class="one-col">
+                                            <p class="num-t">Россия</p>
+                                            <a href="#" class="num">+7 (499) 703-32-24</a>
+                                            <a href="#" class="num">+7 (926) 826-85-39</a>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="head-sec-col">Реквизиты</p>
+                                            <p class="req">ООО "ИННОСОФТ"<br>ИНН 1615012919<br>ОГРН 1161690132966</p>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="req">Ул. Университетская, д. 7,<br>г. Иннополис, Верхнеуслонский р-н,<br>респ. Татарстан. 420500</p>
+                                        </div>
+                                    </div>
+                                    <div class="one-office">
+                                       <div class="one-col">
+                                            <p class="num-t">Евросоюз</p>
+                                            <a href="#" class="num">+372 (63) 46152</a>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="head-sec-col">Реквизиты</p>
+                                            <p class="req">Yorso Europe OÜ<br>Реестровый номер 14451226</p>
+                                        </div>
+                                        <div class="one-col">
+                                            <p class="req">Tallinn, Kesklinna linnaosa,<br>Kiriku tn 6, 10130 </p>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bordered">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="bot-side-footer">
+                                <a href="#">
+                                    <img class="img-responsive" src="img/logo-white.svg" alt="">
+                                </a>
+                                <p>© 2013-2018 Yorso - маркетплейс для рынка рыбы и морепродуктов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>              
+        </footer>
+    </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="sendRequest" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+                    <form class="sendRequest-form">
+                        <div class="email-wr">
+                            <!--ошибкам даем класс "arr" при наличии ошибки-->
+                            <input type="text" placeholder="Введите ваш e-mail">
+                            <!--ошибкам даем класс "arr" при наличии ошибки-->
+                            <p >Ввведен некорректный e-mail</p>
+                        </div>
+                        <div class="text-area-wr">
+                            <textarea placeholder="Что вы хотите?"></textarea>
+                            <p>Опишите интересующий вас товар</p>
+                        </div>
+                        <div class="one-checkbox">
+                            <div class="check-style">
+                                <input type="checkbox" class="checkbox" name="" id="checkbox-agreement">
+                                <label for="checkbox-agreement"></label>
+                            </div>
+                            <p>Я даю согласие на обработку своих данных в соответствии с <a href="#">политикой конфиденциальности</a></p>
+                        </div>
+                        <p>Для отправки запроса необходимо дать согласие на обработку данных</p>
+                        <div class="buttons-wrapp">
+                            <div class="for-padd">
+                                <button style="butt-1" type="submit">Отправить запрос</button>
+                            </div>
+                            <!--добавляем класс "show" для появления кнопки-->
+                            <a href="#" class="get-cons show">Связаться с консультантом</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
