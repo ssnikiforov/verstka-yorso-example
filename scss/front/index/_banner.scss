@@ -1,0 +1,53 @@
+@import "../variables";
+
+.banner {
+  height: 700px;
+  background: url('#{$assets-path}/img/banner.jpg');
+  padding-top: 20px;
+
+  &__form {
+    display: flex;
+    box-shadow: 0px 2px 4px rgba(35, 35, 35, 0.1), 0px -2px 4px rgba(35, 35, 35, 0.05);
+  }
+
+  &__search-button {
+    width: 100px;
+    height: 50px;
+    flex-grow: 0;
+    background: $redesign-index-grey;
+    border: 1px solid #E8E4E4;
+    border-radius: 5px;
+    z-index: 1;
+    outline: none;
+  }
+
+  &__text {
+    margin-top: 99px;
+    max-width: 506px;
+  }
+
+  &__title {
+    font-family: $GothProB;
+    font-size: 50px;
+    line-height: 62px;
+    margin: 0;
+    color: $redesign-index-black;
+  }
+
+  &__description {
+    margin: 76px 0 0;
+    font-family: $GothPro;
+    font-size: 24px;
+    line-height: 34px;
+    color: $redesign-index-black;
+  }
+
+  &__buttons {
+    margin-top: 76px;
+    display: flex;
+  }
+
+  &__buy-button {
+    margin-right: 54px;
+  }
+}

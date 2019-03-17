@@ -1,0 +1,54 @@
+@import "../variables";
+
+.footer-credits {
+  width: 65%;
+  padding: 15px 0;
+
+  &__region {
+    margin-left: 58.5px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-family: $GothProB;
+    line-height: 17px;
+    color: $redesign-index-black;
+    margin: 0 0 15px;
+  }
+
+  &__phones-block {
+    margin-bottom: 20px;
+    width: 22%;
+    flex-shrink: 0;
+  }
+
+  &__phone {
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 17px;
+    color: $redesign-index-black;
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+
+  &__details {
+    width: 25%;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 22px;
+    color: $redesign-index-black;
+  }
+
+  &__address {
+    margin-top: 32px;
+    width: 38%;
+  }
+}
+

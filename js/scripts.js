@@ -93,8 +93,13 @@ $(document).ready(function () {
         $('.cookies-wrapp').css({
             'display':'none'
         });
+        $('.cookies').hide();
     });
-    
+
+
+    $('.clicking-item').click(function() {
+        location.href = $(this).find('a').attr('href');
+    });
    
     
 });

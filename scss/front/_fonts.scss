@@ -26,3 +26,30 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: GothamPro;
+  src: url('#{$assets-path}/fonts/GothaProReg.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: GothamProLight;
+  src: url('#{$assets-path}/fonts/GothaProLig.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: GothamProMedium;
+  src: url('#{$assets-path}/fonts/GothaProMed.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: GothamProBold;
+  src: url('#{$assets-path}/fonts/GothaProBol.otf');
+  font-style: normal;
+  font-weight: normal;
+}

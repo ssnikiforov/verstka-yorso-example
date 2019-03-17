@@ -1,0 +1,21 @@
+@import "../variables";
+
+.clients {
+  margin-top: 65px;
+
+  &__flex {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background: $brand-white;
+    padding: 54px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 34px;
+  }
+}
