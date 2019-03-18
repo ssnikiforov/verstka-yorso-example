@@ -1,0 +1,84 @@
+@import "../variables";
+
+.order-steps {
+  background: $redesign-index-body;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    color: #31365E;
+    font-size: 24px;
+    font-family: $GothProM;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  &__list {
+    margin: 65px 61px 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      left: 18px;
+      content: '';
+      width: 1px;
+      height: 59px;
+      top: 36px;
+      background: $redesign-index-orange;
+      opacity: 0.4;
+      z-index: 2001;
+    }
+
+    &--reverse {
+      &:before {
+        top: 30px;
+        height: 62px;
+      }
+    }
+  }
+
+  &__item {
+    font-size: 18px;
+    font-family: $GothProM;
+    line-height: 21px;
+    color: $redesign-index-orange;
+    padding-left: 62px;
+    position: relative;
+    margin-bottom: 55px;
+    z-index: 2002;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      left: 0;
+      top: calc(50% - 18px);
+      background: $redesign-index-orange;
+    }
+
+    &--opacity {
+      opacity: 0.4;
+      font-size: 14px;
+      line-height: 17px;
+
+      &:before {
+        width: 26px;
+        height: 26px;
+        top: calc(50% - 13px);
+        left: 5px;
+      }
+    }
+  }
+}

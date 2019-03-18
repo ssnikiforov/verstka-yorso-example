@@ -32,6 +32,13 @@ $(document).ready(function () {
           'dropdownCssClass': 'catalog-select__dropdown',
         });
     }
+    if(document.querySelector('.index-select')) {
+        $('.index-select').select2({
+            width: '100%',
+            containerCssClass: 'index-select__wrap',
+            dropdownCssClass: 'index-select__dropdown',
+        });
+    }
 
     $('.custom-select').on('select2:open', function() {
         $('.select2-search--dropdown .select2-search__field').attr('placeholder', 'Начните вводить название страны');
@@ -133,5 +140,19 @@ $(document).ready(function () {
         $('#profile').slideUp();
         $('.page-header__arrow').removeClass('page-header__arrow--reverse');
     });
+
+
+    // modals
+
+    $('.phone').inputmask({
+        mask: "+7 (999) 999-99-99",
+        placeholder: "_",
+        showMaskOnHover: false,
+        showMaskOnFocus: true
+    });
+
+    //$('#step1').modal('show');
+    //$('#step2').modal('show');
+    //$('#thank_you').modal('show');
     
 });

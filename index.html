@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yorso</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/select2.min.css" rel="stylesheet">
     <link href="css/build/front.css" rel="stylesheet">
 </head>
 
@@ -391,7 +392,7 @@
                     <div class="col-md-12">
                         <div class="footer-top">
                             <div class="footer-top__mail">
-                                <a href="mailto:info@yorso.com" class="footer-top__email-link">info@yorso.com</a>
+                                <a href="#" class="footer-top__email-link">info@yorso.com</a>
                                 <a href="#" class="footer-top__subscribe-link">Subscribe for updates</a>
                             </div>
                             <div class="footer-top__messengers">
@@ -532,49 +533,179 @@
                 </div>
             </div>
         </footer>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="sendRequest" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
-                    <form class="sendRequest-form">
-                        <div class="email-wr">
-                            <!--ошибкам даем класс "arr" при наличии ошибки-->
-                            <input type="text" placeholder="Введите ваш e-mail">
-                            <!--ошибкам даем класс "arr" при наличии ошибки-->
-                            <p >Ввведен некорректный e-mail</p>
-                        </div>
-                        <div class="text-area-wr">
-                            <textarea placeholder="Что вы хотите?"></textarea>
-                            <p>Опишите интересующий вас товар</p>
-                        </div>
-                        <div class="one-checkbox">
-                            <div class="check-style">
-                                <input type="checkbox" class="checkbox" name="" id="checkbox-agreement">
-                                <label for="checkbox-agreement"></label>
+    </section>
+
+    <!-- Modal Step 1 -->
+
+    <div class="modal modal--index fade" id="step1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--index">
+            <div class="order-block">
+                <div class="order-block__top-image"><img src="img/order_step1.svg" alt="" class="img-responsive"></div>
+                <div class="order-block__left-side order-steps">
+                    <p class="order-steps__title">Process Order</p>
+                    <ul class="order-steps__list">
+                        <li class="order-steps__item">What would you like to buy?</li>
+                        <li class="order-steps__item order-steps__item--opacity">How can we contact you?</li>
+                    </ul>
+                    <div class="order-block__logo"><img src="img/logo.svg" alt="" class="img-responsive"></div>
+                </div>
+                <div class="order-block__right-side">
+                    <span class="order-block__close" data-dismiss="modal" aria-label="Close">
+                        <img src="img/close.svg" alt="">
+                    </span>
+
+                    <h5 class="order-block__title">Step 1</h5>
+                    <p class="order-block__text">Hello! Please, elaborate on your order.</p>
+                    <p class="order-block__text order-block__text--small">More than 6000 suppliers worldwide will get your request and prepare the greatest deals.</p>
+
+                    <form action="" class="order-form">
+                        <p class="order-form__label">What would you like to buy?</p>
+                        <div class="order-form__goods-wrap">
+                            <div class="order-form__chosen">
+                                <span class="order-form__good">giant squid</span>
+                                <span class="order-form__delete"></span>
                             </div>
-                            <p>Я даю согласие на обработку своих данных в соответствии с <a href="#">политикой конфиденциальности</a></p>
-                        </div>
-                        <p>Для отправки запроса необходимо дать согласие на обработку данных</p>
-                        <div class="buttons-wrapp">
-                            <div class="for-padd">
-                                <button style="butt-1" type="submit">Отправить запрос</button>
+                            <div class="order-form__chosen">
+                                <span class="order-form__good">scallop</span>
+                                <span class="order-form__delete"></span>
                             </div>
-                            <!--добавляем класс "show" для появления кнопки-->
-                            <a href="#" class="get-cons show">Связаться с консультантом</a>
+                            <div class="order-form__chosen">
+                                <span class="order-form__good">sea cabbage</span>
+                                <span class="order-form__delete"></span>
+                            </div>
+                            <input type="text" class="order-form__good-input" value="tila">
+
+                            <!-- Autocomplete list -->
+                            <ul class="order-form__dropdown">
+                                <li class="order-form__item-dropdown">tilapia</li>
+                                <li class="order-form__item-dropdown">tilapia grey</li>
+                                <li class="order-form__item-dropdown">tilapia white</li>
+                            </ul>
+                            <!-- / Autocomplete list -->
+                        </div>
+
+                        <p class="order-form__label">Delivery address</p>
+                        <div class="order-form__flex">
+                            <div class="order-form__side">
+                                <select class="index-select">
+                                    <option>Afghanistan</option>
+                                    <option>Albania</option>
+                                    <option>Andorra</option>
+                                    <option>Angola</option>
+                                    <option selected>Russia</option>
+                                </select>
+                            </div>
+                            <div class="order-form__side">
+                                <input type="text" placeholder="City" class="order-form__input">
+                            </div>
+                        </div>
+
+                        <div class="order-form__footer">
+                            <button class="index-button index-button--fill">Next</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal Step 2 -->
+
+    <div class="modal modal--index fade" id="step2" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--index">
+            <div class="order-block">
+                <div class="order-block__top-image"><img src="img/order_step2.svg" alt="" class="img-responsive"></div>
+                <div class="order-block__left-side order-steps">
+                    <p class="order-steps__title">Process Order</p>
+                    <ul class="order-steps__list order-steps__list--reverse">
+                        <li class="order-steps__item order-steps__item--opacity">What would you like to buy?</li>
+                        <li class="order-steps__item">How can we contact you?</li>
+                    </ul>
+                    <div class="order-block__logo"><img src="img/logo.svg" alt="" class="img-responsive"></div>
+                </div>
+                <div class="order-block__right-side">
+                    <span class="order-block__close" data-dismiss="modal" aria-label="Close">
+                        <img src="img/close.svg" alt="">
+                    </span>
+
+                    <h5 class="order-block__title">Step 2</h5>
+                    <p class="order-block__text">Please, leave your contact information</p>
+                    <p class="order-block__text order-block__text--small">We'll start working on your order as soon as you leave your request.</p>
+
+                    <form action="" class="order-form">
+                        <div class="order-form__flex">
+                            <div class="order-form__side">
+                                <p class="order-form__label">E-mail</p>
+                                <input type="text" placeholder="i.ivanov@yorso.com" class="order-form__input">
+
+                                <p class="order-form__label">Phone number</p>
+                                <input type="text" placeholder="+7 (777) 777-77-77" class="order-form__input phone">
+                            </div>
+                            <div class="order-form__side">
+                                <p class="order-form__label">Comments</p>
+                                <textarea class="order-form__textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="index-checkbox order-form__first-checkbox">
+                            <div class="index-checkbox__wrap">
+                                <input type="checkbox" class="index-checkbox__checkbox" name="" id="modal-checkbox-news">
+                                <label for="modal-checkbox-news"></label>
+                            </div>
+                            <p class="index-checkbox__text">I agree to get news from Yorso</p>
+                        </div>
+                        <div class="index-checkbox">
+                            <div class="index-checkbox__wrap">
+                                <input type="checkbox" class="index-checkbox__checkbox" name="" id="modal-checkbox-agreement" checked>
+                                <label for="modal-checkbox-agreement"></label>
+                            </div>
+                            <p class="index-checkbox__text">I consent my personal data proessing under the <a href="#" class="index-checkbox__link">Privacy Police</a></p>
+                        </div>
+
+                        <div class="order-form__footer order-form__footer--small_margin">
+                            <button class="index-button order-form__back">Back</button>
+                            <button class="index-button index-button--fill">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Thank you -->
+
+    <div class="modal modal--index fade" id="thank_you" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog--index">
+            <div class="order-block order-block--vertical_flex">
+                <div class="order-block__top-image"><img src="img/order_step2.svg" alt="" class="img-responsive"></div>
+                <div class="order-block__top-image order-block__top-image--right"><img src="img/order_thank.svg" alt="" class="img-responsive"></div>
+
+                <span class="order-block__close" data-dismiss="modal" aria-label="Close">
+                    <img src="img/close_white.svg" alt="">
+                </span>
+
+                <h5 class="order-block__title order-block__title--center">Thank you for information!</h5>
+                <p class="order-block__text order-block__text--center order-block__text--margin_big">Your request is <span class="order-block__text--strong">N255036</span></p>
+                <p class="order-block__text order-block__text--center order-block__text--small order-block__text--margin_big">We've already mailed out our suppliers and we'll send the first offers on your email very soon.<br>We're sure we can offer you the greatest deal!</p>
+
+                <div class="order-form__footer order-form__footer--center order-form__footer--small_margin">
+                    <button class="index-button order-form__back">Back</button>
+                    <button class="index-button index-button--fill">Ok</button>
+                </div>
+
+                <div class="order-block__logo"><img src="img/logo.svg" alt="" class="img-responsive"></div>
+            </div>
+        </div>
+    </div>
+
     
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/inputmask.js"></script>
+    <script src="js/jquery.inputmask.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
