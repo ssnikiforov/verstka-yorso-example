@@ -100,6 +100,38 @@ $(document).ready(function () {
     $('.clicking-item').click(function() {
         location.href = $(this).find('a').attr('href');
     });
-   
+
+
+    $('#open_languages').click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#notifications').slideUp();
+        $('#profile').slideUp();
+        $('.page-header__arrow').removeClass('page-header__arrow--reverse');
+        $('#languages_list').slideToggle();
+    });
+    $('#open_notifications').click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#languages_list').slideUp();
+        $('#profile').slideUp();
+        $('.page-header__arrow').removeClass('page-header__arrow--reverse');
+        $('#notifications').slideToggle();
+    });
+    $('#open_profile').click(function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        $('#languages_list').slideUp();
+        $('#notifications').slideUp();
+        $('#profile').slideToggle();
+        $('.page-header__arrow').toggleClass('page-header__arrow--reverse');
+    });
+
+    $('body').click(function() {
+        $('#languages_list').slideUp();
+        $('#notifications').slideUp();
+        $('#profile').slideUp();
+        $('.page-header__arrow').removeClass('page-header__arrow--reverse');
+    });
     
 });

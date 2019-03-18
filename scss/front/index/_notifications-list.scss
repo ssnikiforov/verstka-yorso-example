@@ -1,0 +1,83 @@
+@import "../variables";
+
+.notifications-list {
+  max-width: 309px;
+  width: 309px;
+  left: -108px;
+
+  &:before {
+    left: calc(50% - 25px);
+  }
+
+  &__head {
+    line-height: 15px;
+    font-family: $GothProL;
+  }
+
+  &__important {
+    font-family: $GothProB;
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      background: $brand-white;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+    width: 100%;
+  }
+
+  &__text {
+    line-height: 17px;
+    margin: 0;
+    width: 160px;
+    position: relative;
+    padding-left: 33px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      display: block;
+      border-radius: 50%;
+      background: $redesign-index-orange;
+      top: calc(50% - 5.5px);
+      left: 0;
+    }
+
+    &--grey {
+      color: $redesign-index-black-05;
+
+      &:before {
+        background: $redesign-index-grey;
+      }
+    }
+  }
+
+  &__link {
+    color: $redesign-index-orange;
+    font-family: $GothProB;
+    text-decoration: underline;
+
+    &--grey {
+      color: $redesign-index-black-05;
+    }
+  }
+
+  &__date {
+    width: 65px;
+    flex-shrink: 0;
+    font-family: $GothProL;
+    font-size: 11px;
+    line-height: normal;
+    color: $redesign-index-black-05;
+  }
+}
