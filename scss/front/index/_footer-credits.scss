@@ -55,9 +55,12 @@
     font-family: $GothProL;
     line-height: 17px;
     color: $redesign-index-black;
-    display: block;
-    margin-bottom: 5px;
-    text-decoration: underline;
+    display: inline-block;
+    border-bottom: 0.5px solid $redesign-index-black;
+
+    &:hover {
+      border-bottom-color: $redesign-index-orange;
+    }
 
     @media #{$sm} {
       font-size: 12px;
