@@ -3,8 +3,16 @@
 .profile-menu {
   left: 0;
 
+  @media #{$sm} {
+    left: 25px;
+  }
+
   &:before {
     left: 25px;
+
+    @media #{$sm} {
+      left: 5px;
+    }
   }
 
   &__icon {

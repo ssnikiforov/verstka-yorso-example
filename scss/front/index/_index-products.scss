@@ -3,9 +3,25 @@
 .index-products {
   margin-top: -69px;
 
+  @media #{$sm} {
+    margin-top: -48px;
+  }
+
   &__flex {
     display: flex;
     justify-content: space-between;
+
+    @media #{$sm} {
+      width: calc(100% + 9px);
+      transform: translateX(-4.5px);
+
+      .slick-prev {
+        left: -38px;
+      }
+      .slick-next {
+        right: -38px;
+      }
+    }
   }
 
   &__item {
@@ -15,6 +31,7 @@
     box-shadow: 0px 1px 4px rgba(35, 35, 35, 0.05);
     border-radius: 5px;
     transition: 0.3s;
+    overflow: hidden;
 
     &:last-child {
       margin-right: 0;
@@ -28,10 +45,18 @@
         background: $redesign-index-orange;
       }
     }
+
+    @media #{$sm} {
+      margin: 0 4.5px;
+    }
   }
 
   &__description {
     padding: 28px 18px 19px 19px;
+
+    @media #{$sm} {
+      padding: 15px 17px;
+    }
   }
 
   &__title {
@@ -42,6 +67,12 @@
     display: block;
     margin-bottom: 21px;
     color: $redesign-index-black;
+
+    @media #{$sm} {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 14px;
+    }
   }
 
   &__geo {
@@ -50,6 +81,12 @@
     line-height: 20px;
     text-align: center;
     color: $redesign-index-black;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 14px;
+    }
   }
 
   &__note {
@@ -59,5 +96,11 @@
     line-height: 17px;
     text-align: center;
     color: $redesign-index-black-05;
+
+    @media #{$sm} {
+      font-size: 10px;
+      line-height: 14px;
+      margin-top: 14px;
+    }
   }
 }

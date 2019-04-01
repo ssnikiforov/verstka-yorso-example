@@ -6,9 +6,18 @@
   background: url('#{$assets-path}/img/subscribe_bg.jpg') no-repeat center;
   background-size: cover;
 
+  @media #{$sm} {
+    margin-top: 60px;
+    padding: 40px 0 55px;
+  }
+
   &__wrap {
     max-width: 817px;
     margin: auto;
+
+    @media #{$sm} {
+      width: 568px;
+    }
   }
 
   &__title {
@@ -17,6 +26,11 @@
     font-size: 50px;
     font-family: $GothProB;
     line-height: 62px;
+
+    @media #{$sm} {
+      font-size: 36px;
+      line-height: 45px;
+    }
   }
 
   &__form {
@@ -29,6 +43,11 @@
     height: 50px;
     z-index: 1;
     flex-shrink: 0;
+
+    @media #{$sm} {
+      width: 100px;
+      height: 40px;
+    }
   }
 
   &__note {
@@ -38,6 +57,11 @@
     font-family: $GothPro;
     color: $brand-white;
     text-align: center;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 13px;
+    }
   }
 
   &__police-link {

@@ -70,6 +70,39 @@ $(document).ready(function () {
     $('.other-products .one-block,.shadow-wr,.shadow-wr-l').click(function() {
         location.href = $(this).find('a').attr('href');
     });
+
+
+
+    // слайдер клиентов
+
+    if ($(window).width() < 992) {
+        $('.index-products-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"><img src="img/slider-arrow-prev.svg" alt="" class="img-responsive"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="img/slider-arrow-next.svg" alt="" class="img-responsive"></button>'
+        });
+
+        $('.how-slider').slick({
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"><img src="img/slider-arrow-prev.svg" alt="" class="img-responsive"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="img/slider-arrow-next.svg" alt="" class="img-responsive"></button>'
+        });
+
+        $('.clients-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"><img src="img/slider-arrow-prev.svg" alt="" class="img-responsive"></button>',
+            nextArrow: '<button type="button" class="slick-next"><img src="img/slider-arrow-next.svg" alt="" class="img-responsive"></button>'
+        });
+    }
     
     
     

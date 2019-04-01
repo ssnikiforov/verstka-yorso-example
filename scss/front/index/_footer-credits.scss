@@ -4,10 +4,20 @@
   width: 65%;
   padding: 15px 0;
 
+  @media #{$sm} {
+    width: 33%;
+    flex-shrink: 0;
+    padding: 7px 0;
+  }
+
   &__region {
     margin-left: 58.5px;
     display: flex;
     justify-content: space-between;
+
+    @media #{$sm} {
+      margin-left: 87.5px;
+    }
   }
 
   &__title {
@@ -16,12 +26,28 @@
     line-height: 17px;
     color: $redesign-index-black;
     margin: 0 0 15px;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 10px;
+    }
   }
 
   &__phones-block {
     margin-bottom: 20px;
     width: 22%;
     flex-shrink: 0;
+
+    @media #{$sm} {
+      width: 100%;
+    }
+
+    &--no_margin {
+      @media #{$sm} {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__phone {
@@ -32,11 +58,20 @@
     display: block;
     margin-bottom: 5px;
     text-decoration: underline;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 
   &__details {
     width: 25%;
     flex-shrink: 0;
+
+    @media #{$sm} {
+      display: none;
+    }
   }
 
   &__text {
@@ -49,6 +84,10 @@
   &__address {
     margin-top: 32px;
     width: 38%;
+
+    @media #{$sm} {
+      display: none;
+    }
   }
 }
 

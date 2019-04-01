@@ -8,6 +8,7 @@
     <title>Yorso</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/select2.min.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
     <link href="css/build/front.css" rel="stylesheet">
 </head>
 
@@ -41,7 +42,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="page-header__flex">
-                                <div class="page-header__logo"><img src="img/logo.svg" alt=""></div>
+                                <div class="page-header__logo"><img src="img/logo.svg" alt="" class="img-responsive"></div>
                                 <div class="page-header__links">
                                     <a href="#" class="page-header__link page-header__link--active">
                                         <svg width="28" height="30" viewBox="0 0 28 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +79,10 @@
                                     <div class="page-header__arrow"><img src="img/profile_arrow.svg" class="img-responsive" alt=""></div>
 
                                     <ul class="head-dropdown profile-menu" id="profile">
-                                        <li class="head-dropdown__item head-dropdown__item--top">My Account</li>
+                                        <li class="head-dropdown__item head-dropdown__item--top">
+                                            <span class="visible-lg visible-md">My Account</span>
+                                            <span class="hidden-lg hidden-md">Anton Trantin</span>
+                                        </li>
                                         <li class="head-dropdown__item">
                                             <a href="#" class="head-dropdown__link">
                                                 <span class="head-dropdown__icon profile-menu__icon"><img src="img/profile1.svg" alt=""></span>
@@ -107,7 +111,7 @@
                                     </div>
                                     <ul class="head-dropdown notifications-list" id="notifications">
                                         <li class="head-dropdown__item head-dropdown__item--top notifications-list__head">
-                                            You've got <span class="notifications-list__important">2 new</span> notifications
+                                            <span class="visible-lg visible-md">You've got </span><span class="notifications-list__important">2 new</span> notifications
                                         </li>
                                         <li class="head-dropdown__item notifications-list__item">
                                             <div class="head-dropdown__link notifications-list__flex">
@@ -223,7 +227,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="index-products__flex">
+                            <div class="index-products__flex index-products-slider">
                                 <div class="index-products__item">
                                     <div class="item-cover">
                                         <div class="item-cover__image" style="background-image: url(img/main-baner-bg.jpg)"></div>
@@ -302,17 +306,17 @@
                                     <p class="how__quarter-text">Wait for receiving<br>or sending goods</p>
                                 </div>
                             </div>
-                            <div class="how__flex">
+                            <div class="how__flex how__slider how-slider">
                                 <div class="how__third-item clicking-item">
-                                    <div class="how__third-icon"><img src="img/how5.svg" alt=""></div>
+                                    <div class="how__third-icon"><img src="img/how5.svg" alt="" class="img-responsive"></div>
                                     <a href="#" class="how__third-text">Actual prices<br>and balances</a>
                                 </div>
                                 <div class="how__third-item clicking-item">
-                                    <div class="how__third-icon"><img src="img/how6.svg" alt=""></div>
+                                    <div class="how__third-icon"><img src="img/how6.svg" alt="" class="img-responsive"></div>
                                     <a href="#" class="how__third-text">Detailed<br>specifications of<br>goods with photo<br>and video</a>
                                 </div>
                                 <div class="how__third-item clicking-item">
-                                    <div class="how__third-icon"><img src="img/how7.svg" alt=""></div>
+                                    <div class="how__third-icon"><img src="img/how7.svg" alt="" class="img-responsive"></div>
                                     <a href="#" class="how__third-text">Sales 24/7</a>
                                 </div>
                             </div>
@@ -332,7 +336,7 @@
                                 <div class="shrimp__text">
                                     <h3 class="shrimp__title">Didn't find what you were looking for?</h3>
                                     <p class="shrimp__description">Send us a request for the product you are interested in!</p>
-                                    <button class="index-button index-button--fill">Make<br>order</button>
+                                    <button class="index-button index-button--fill index-button--lh15">Make<br>order</button>
                                 </div>
                             </div>
                         </div>
@@ -350,7 +354,7 @@
                                 <h2 class="block-head__title">Our clients</h2>
                                 <a href="#" class="block-head__more">More information</a>
                             </div>
-                            <div class="clients__flex">
+                            <div class="clients__flex clients-slider">
                                 <div class="clients__item"><img src="img/partner-1.jpg" alt="" class="img-responsive"></div>
                                 <div class="clients__item"><img src="img/partner-2.jpg" alt="" class="img-responsive"></div>
                                 <div class="clients__item"><img src="img/partner-3.jpg" alt="" class="img-responsive"></div>
@@ -503,7 +507,7 @@
                                     </div>
                                 </div>
                                 <div class="footer-credits__region">
-                                    <div class="footer-credits__phones-block">
+                                    <div class="footer-credits__phones-block footer-credits__phones-block--no_margin">
                                         <p class="footer-credits__title">European Union</p>
                                         <a href="#" class="footer-credits__phone">+7 (499) 703-32-24</a>
                                     </div>
@@ -528,6 +532,7 @@
                             <p class="page-footer__copyright">
                                 &copy; 2013-2019 Yorso - marketplace for fish and seafood market
                             </p>
+                            <a href="mailto:" class="page-footer__email hidden-lg hidden-md">info@yorso.com</a>
                         </div>
                     </div>
                 </div>
@@ -551,7 +556,7 @@
                 </div>
                 <div class="order-block__right-side">
                     <span class="order-block__close" data-dismiss="modal" aria-label="Close">
-                        <img src="img/close.svg" alt="">
+                        <img src="img/close.svg" alt="" class="img-responsive">
                     </span>
 
                     <h5 class="order-block__title">Step 1</h5>
@@ -601,7 +606,7 @@
                         </div>
 
                         <div class="order-form__footer">
-                            <button class="index-button index-button--fill">Next</button>
+                            <button class="index-button index-button--fill order-form__button">Next</button>
                         </div>
                     </form>
                 </div>
@@ -625,7 +630,7 @@
                 </div>
                 <div class="order-block__right-side">
                     <span class="order-block__close" data-dismiss="modal" aria-label="Close">
-                        <img src="img/close.svg" alt="">
+                        <img src="img/close.svg" alt="" class="img-responsive">
                     </span>
 
                     <h5 class="order-block__title">Step 2</h5>
@@ -663,8 +668,8 @@
                         </div>
 
                         <div class="order-form__footer order-form__footer--small_margin">
-                            <button class="index-button order-form__back">Back</button>
-                            <button class="index-button index-button--fill">Next</button>
+                            <button class="index-button order-form__back order-form__button">Back</button>
+                            <button class="index-button index-button--fill order-form__button">Next</button>
                         </div>
                     </form>
                 </div>
@@ -689,8 +694,8 @@
                 <p class="order-block__text order-block__text--center order-block__text--small order-block__text--margin_big">We've already mailed out our suppliers and we'll send the first offers on your email very soon.<br>We're sure we can offer you the greatest deal!</p>
 
                 <div class="order-form__footer order-form__footer--center order-form__footer--small_margin">
-                    <button class="index-button order-form__back">Back</button>
-                    <button class="index-button index-button--fill">Ok</button>
+                    <button class="index-button order-form__back order-form__button">Back</button>
+                    <button class="index-button index-button--fill order-form__button">Ok</button>
                 </div>
 
                 <div class="order-block__logo"><img src="img/logo.svg" alt="" class="img-responsive"></div>

@@ -19,6 +19,10 @@
 
   &--index {
     padding-top: 100px;
+
+    @media #{$sm} {
+      padding-top: 80px;
+    }
   }
 
   &__for-flex-height {
@@ -43,6 +47,10 @@
     background: $brand-white;
     top: 0;
     right: -5px;
+
+    @media #{$sm} {
+      height: 40px;
+    }
   }
 
   &__input {
@@ -58,6 +66,12 @@
     font-size: 14px;
     line-height: 15px;
     color: $redesign-index-black-05;
+
+    @media #{$sm} {
+      padding-left: 12px;
+      font-size: 12px;
+      line-height: 13px;
+    }
 
     &::placeholder {
       color: $redesign-index-black-05;
@@ -88,9 +102,22 @@
   text-align: center;
   transition: 0.3s;
 
+  @media #{$sm} {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    line-height: 13px;
+  }
+
   &--fill {
     background: $redesign-index-orange;
     color: $brand-white;
+  }
+
+  &--lh15 {
+    @media #{$sm} {
+      line-height: 15px;
+    }
   }
 
   &--price {
@@ -101,12 +128,25 @@
     height: auto;
     padding: 12px 0;
     box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.1);
+
+    @media #{$sm} {
+      font-size: 16px;
+      line-height: 20px;
+      padding: 8px 0;
+    }
   }
 
   &--small {
     width: 100px;
     height: 50px;
     line-height: 50px;
+
+    @media #{$sm} {
+      width: 80px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 12px;
+    }
   }
 }
 
@@ -121,6 +161,11 @@
     font-size: 50px;
     line-height: 53px;
     color: $redesign-index-black;
+
+    @media #{$sm} {
+      font-size: 36px;
+      line-height: 45px;
+    }
   }
 
   &__more {
@@ -183,6 +228,11 @@
   &--index {
     max-width: 1110px!important;
     width: 1110px;
+
+    @media #{$sm} {
+      width: 712px;
+      max-width: 712px;
+    }
   }
 }
 
@@ -193,6 +243,10 @@
   position: relative;
   overflow: hidden;
   margin-top: 10px;
+
+  @media #{$sm} {
+    margin-top: 2px;
+  }
 
   &__wrap {
 
@@ -217,6 +271,11 @@
     position: relative;
     cursor: pointer;
 
+    @media #{$sm} {
+      width: 15px;
+      height: 15px;
+    }
+
     &:before {
       content: "";
       display: block;
@@ -229,6 +288,11 @@
       height: 20px;
       background-image: url('#{$assets-path}/img/index-checked.svg');
       opacity: 0;
+
+      @media #{$sm} {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
   &__checkbox:checked + label {
@@ -246,10 +310,42 @@
     font-size: 14px;
     font-family: $GothPro;
     line-height: 16px;
+
+    @media #{$sm} {
+      font-size: 10px;
+      line-height: 11px;
+      padding-left: 9px;
+    }
   }
 
   &__link {
     color: $redesign-index-orange;
     text-decoration: underline;
+  }
+}
+
+.container {
+  @media #{$sm} {
+    width: 678px;
+  }
+}
+
+
+.slick-arrow {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  background: none;
+  width: 30px;
+  height: 21.09px;
+  top: calc(50% - 11px);
+  outline: none;
+
+  &.slick-prev {
+    left: -30px;
+  }
+
+  &.slick-next {
+    right: -30px;
   }
 }

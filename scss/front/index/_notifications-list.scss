@@ -5,8 +5,18 @@
   width: 309px;
   left: -108px;
 
+  @media #{$sm} {
+    max-width: 203px;
+    width: 203px;
+    left: -85px;
+  }
+
   &:before {
     left: calc(50% - 25px);
+
+    @media #{$sm} {
+      left: calc(50% - 15px);
+    }
   }
 
   &__head {
@@ -40,6 +50,11 @@
     width: 160px;
     position: relative;
     padding-left: 33px;
+
+    @media #{$sm} {
+      padding-left: 25px;
+      width: 100%;
+    }
 
     &:before {
       content: '';
@@ -79,5 +94,9 @@
     font-size: 11px;
     line-height: normal;
     color: $redesign-index-black-05;
+
+    @media #{$sm} {
+      display: none;
+    }
   }
 }

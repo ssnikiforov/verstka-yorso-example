@@ -5,15 +5,24 @@
     right: -34px;
     margin-top: 30px;
 
-    @media (max-width: 1239px) {
+    @media #{$lg} {
       right: -25px;
+    }
+
+    @media #{$sm} {
+      margin-top: 26px;
+      right: -8px;
     }
 
     &:before {
       right: 25px;
 
-      @media (max-width: 1239px) {
+      @media #{$lg} {
         right: 13px;
+      }
+
+      @media #{$sm} {
+        right: 5px;
       }
     }
   }
@@ -23,6 +32,10 @@
     align-items: center;
     padding: 14px 23px;
     position: relative;
+
+    @media #{$sm} {
+      padding: 14px 18px;
+    }
 
     &:after {
       position: absolute;
@@ -45,10 +58,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media #{$sm} {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__text {
     margin-left: 17px;
+
+    @media #{$sm} {
+      margin-left: 22px;
+    }
 
     &--bold {
       font-family: $GothProB;
