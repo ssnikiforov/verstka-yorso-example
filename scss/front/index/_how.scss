@@ -38,6 +38,10 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @media (max-width: 1239px) {
+      margin-right: 60px;
+    }
   }
 
   &__quarter-icon {
@@ -76,6 +80,11 @@
 
     &:hover {
       box-shadow: 0px 3px 10px rgba(35, 35, 35, 0.15);
+    }
+
+    @media (max-width: 1239px) {
+      padding: 46px 15px;
+      margin-right: 60px;
     }
   }
 

@@ -45,6 +45,11 @@
         fill: $redesign-index-orange;
       }
     }
+
+    @media (max-width: 1239px) {
+      padding: 0 15px;
+      margin-left: 30px;
+    }
   }
 
   &__icon-link {
@@ -79,6 +84,10 @@
     height: 100px;
     position: relative;
     cursor: pointer;
+
+    @media (max-width: 1239px) {
+      padding: 0 27px 0 20px;
+    }
   }
 
   &__notification {
@@ -100,6 +109,10 @@
 
   &__buttons {
     display: flex;
+
+    @media (max-width: 1239px) {
+      margin-left: 20px;
+    }
   }
 
   &__button {
