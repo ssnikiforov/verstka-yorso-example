@@ -249,6 +249,10 @@ $(document).ready(function () {
         showMaskOnFocus: true
     });
 
+    $('.index-checkbox__text').click(function () {
+        $(this).parents('.index-checkbox').find('input').click();
+    });
+
     //$('#step1').modal('show');
     //$('#step2').modal('show');
     //$('#thank_you').modal('show');

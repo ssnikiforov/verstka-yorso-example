@@ -85,5 +85,13 @@
   &__police-link {
     font-family: $GothProB;
     color: $brand-white;
+    transition: 0.3s;
+    display: inline-block;
+    border-bottom: 1px solid $brand-white;
+
+    &:hover {
+      color: $redesign-index-orange;
+      border-bottom-color: $redesign-index-orange;
+    }
   }
 }

@@ -43,6 +43,10 @@
     width: 22%;
     flex-shrink: 0;
 
+    @media #{$lg} {
+      width: 28%;
+    }
+
     @media #{$sm} {
       width: 100%;
     }

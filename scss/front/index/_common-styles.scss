@@ -316,16 +316,16 @@
 
 .modal-dialog {
   &--index {
-    max-width: 1110px!important;
+    max-width: 100%!important;
     width: 1110px;
 
     @media #{$sm} {
-      width: 712px;
-      max-width: 712px;
+      width: 100%;
+      max-width: 100%;
+      margin-top: 80px!important;
     }
 
     @media #{$xs} {
-      width: 100%;
       margin-top: 60px!important;
     }
   }
@@ -419,6 +419,7 @@
     font-size: 14px;
     font-family: $GothPro;
     line-height: 16px;
+    cursor: pointer;
 
     @media #{$sm} {
       font-size: 10px;

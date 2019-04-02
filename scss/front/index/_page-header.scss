@@ -32,9 +32,11 @@
   }
 
   &__logo {
+    width: 149px;
+    flex-shrink: 0;
+
     @media #{$sm} {
       width: 93px;
-      flex-shrink: 0;
     }
 
     @media #{$xs} {
