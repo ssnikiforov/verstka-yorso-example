@@ -21,6 +21,12 @@
       font-size: 12px;
       line-height: 14px;
     }
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 17px;
+    }
   }
 
   &__goods-wrap {
@@ -36,6 +42,9 @@
       margin-bottom: 0;
       padding: 3px 13px;
     }
+    @media #{$xs} {
+      padding: 8px 16px;
+    }
   }
 
   &__chosen {
@@ -50,6 +59,13 @@
     @media #{$sm} {
       margin: 3px 12px 3px 0;
       padding: 1px 5px 1px 7px;
+      height: 16px;
+    }
+
+    @media #{$xs} {
+      height: 24px;
+      padding: 0 8px;
+      margin-top: 6px;
     }
   }
 
@@ -62,6 +78,11 @@
     @media #{$sm} {
       font-size: 9px;
       line-height: 10px;
+    }
+
+    @media #{$xs} {
+      font-size: 12px;
+      line-height: 14px;
     }
   }
 
@@ -98,6 +119,13 @@
       font-size: 12px;
       line-height: 14px;
     }
+
+    @media #{$xs} {
+      height: 24px;
+      font-size: 14px;
+      line-height: 16px;
+      min-width: 50px;
+    }
   }
 
   &__dropdown {
@@ -114,10 +142,16 @@
     overflow-y: auto;
     max-height: 150px;
     display: none;
+    z-index: 3000;
 
     @media #{$sm} {
       padding: 0 15px;
       max-height: 96px;
+    }
+
+    @media #{$xs} {
+      max-height: 150px;
+      padding: 0 20px;
     }
 
     &::-webkit-scrollbar {
@@ -157,6 +191,12 @@
       padding: 8px 0;
     }
 
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 15px 0;
+    }
+
     &:last-child {
       border-bottom: 0;
     }
@@ -169,10 +209,40 @@
   &__flex {
     display: flex;
     justify-content: space-between;
+
+    &--vert {
+      @media #{$xs} {
+        flex-direction: column;
+      }
+    }
   }
 
   &__side {
     width: calc(50% - 15px);
+
+    @media #{$xs} {
+      width: calc(50% - 7.5px);
+    }
+
+    &--full {
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
+
+    &--flex {
+      @media #{$xs} {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__mob-side {
+    @media #{$xs} {
+      width: calc(50% - 7.5px);
+      flex-shrink: 0;
+    }
   }
 
   &__input {
@@ -193,6 +263,13 @@
       line-height: 11px;
       height: 32px;
       padding: 0 15px;
+    }
+
+    @media #{$xs} {
+      font-size: 12px;
+      line-height: 15px;
+      height: 50px;
+      padding: 0 17px;
     }
 
     &::placeholder {
@@ -226,6 +303,12 @@
       font-size: 10px;
       line-height: 11px;
     }
+
+    @media #{$xs} {
+      font-size: 12px;
+      line-height: 15px;
+      height: 50px;
+    }
   }
 
   &__first-checkbox {
@@ -245,11 +328,20 @@
       margin-top: 78px;
     }
 
+    @media #{$xs} {
+      margin-top: 33px;
+      justify-content: center;
+    }
+
     &--small_margin {
       margin-top: 42px;
 
       @media #{$sm} {
         margin-top: 17px;
+      }
+
+      @media #{$xs} {
+        margin-top: 29px;
       }
     }
 
@@ -257,6 +349,11 @@
       justify-content: center;
     }
 
+    &--space_btwn_mob {
+      @media #{$xs} {
+        justify-content: space-between;
+      }
+    }
 
   }
 
@@ -272,6 +369,11 @@
     @media #{$sm} {
       width: 80px;
       height: 40px;
+    }
+
+    @media #{$xs} {
+      width: 130px;
+      height: 60px;
     }
   }
 }

@@ -7,6 +7,10 @@
     left: 25px;
   }
 
+  @media #{$xs} {
+    left: 0;
+  }
+
   &:before {
     left: 25px;
 

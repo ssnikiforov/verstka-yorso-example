@@ -14,6 +14,10 @@
       right: -8px;
     }
 
+    @media #{$xs} {
+      margin-top: 17px;
+    }
+
     &:before {
       right: 25px;
 

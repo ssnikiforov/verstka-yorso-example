@@ -10,6 +10,11 @@
     padding: 22px 0;
   }
 
+  @media #{$xs} {
+    padding: 25px 0;
+    display: block;
+  }
+
   &__mail {
     display: flex;
     align-items: center;
@@ -36,6 +41,7 @@
     text-decoration: underline;
     padding-left: 25px;
     position: relative;
+    transition: 0.3s;
 
     &:before {
       content: '';
@@ -48,12 +54,20 @@
       background: url('#{$assets-path}/img/footer_mail.svg');
       background-size: cover;
     }
+
+    &:hover {
+      color: $redesign-index-blue!important;
+    }
   }
 
   &__messengers {
     display: flex;
     align-items: center;
     height: 30px;
+
+    @media #{$xs} {
+      justify-content: center;
+    }
   }
 
   &__mes-link {
@@ -72,9 +86,19 @@
       margin: 0 18px;
     }
 
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0 20px;
+    }
+
     &:first-child {
       @media #{$sm} {
         margin-left: 0;
+      }
+
+      @media #{$xs} {
+        margin-left: 20px;
       }
     }
 
@@ -87,7 +111,7 @@
       position: absolute;
       left: -20.5px;
       top: -7px;
-      width: 0.5px;
+      width: 1px;
       height: 30px;
       background: $redesign-index-black;
 
@@ -106,6 +130,11 @@
   &__socials {
     display: flex;
     align-items: center;
+
+    @media #{$xs} {
+      margin-top: 20px;
+      justify-content: center;
+    }
   }
 
   &__soc-link {
@@ -120,10 +149,24 @@
       }
     }
 
+    @media #{$xs} {
+      margin: 0 9px;
+
+      svg {
+        height: 15px;
+      }
+    }
+
     &:nth-child(2), &:nth-child(4) {
       @media #{$sm} {
         svg {
           height: 15px;
+        }
+      }
+
+      @media #{$xs} {
+        svg {
+          height: 20px;
         }
       }
     }
@@ -154,6 +197,12 @@
       padding-left: 14px;
     }
 
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 15px;
+      padding-left: 19px;
+    }
+
     &:before {
       position: absolute;
       content: '';
@@ -169,6 +218,12 @@
         height: 13px;
         top: -1px;
       }
+
+      @media #{$xs} {
+        width: 11.04px;
+        height: 15px;
+        top: -2px;
+      }
     }
   }
 
@@ -181,6 +236,10 @@
 
     @media #{$sm} {
       margin-left: 0;
+    }
+
+    @media #{$xs} {
+      margin-left: 5px;
     }
   }
 }

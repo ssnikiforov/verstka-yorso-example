@@ -10,6 +10,10 @@
     padding: 7px 0;
   }
 
+  @media #{$xs} {
+    display: none;
+  }
+
   &__region {
     margin-left: 58.5px;
     display: flex;

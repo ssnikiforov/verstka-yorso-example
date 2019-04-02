@@ -7,6 +7,10 @@
     margin-top: 60px;
   }
 
+  @media #{$xs} {
+    margin-top: 52px;
+  }
+
   &__slider {
     @media #{$sm} {
       width: calc(100% + 46px);
@@ -19,6 +23,12 @@
       .slick-next {
         right: -23px;
       }
+    }
+
+    @media #{$xs} {
+      padding-bottom: 42px;
+      width: calc(100% + 30px);
+      transform: translateX(-15px);
     }
   }
 
@@ -35,6 +45,14 @@
         margin-top: 50px;
       }
 
+      @media #{$xs} {
+        margin-top: 30px;
+        width: calc(100% + 30px);
+        transform: translateX(-15px);
+        padding-bottom: 50px;
+        height: 250px;
+      }
+
       &:before {
         position: absolute;
         display: block;
@@ -48,6 +66,10 @@
         @media #{$sm} {
           top: 63.5px;
         }
+
+        @media #{$xs} {
+          display: none;
+        }
       }
 
       &:after {
@@ -60,6 +82,10 @@
           background: $redesign-index-orange;
           z-index: 0;
           top: 241.5px;
+        }
+
+        @media #{$xs} {
+          display: none;
         }
       }
     }
@@ -79,6 +105,10 @@
     &:nth-child(3) {
       @media #{$sm} {
         margin-top: 48px;
+      }
+
+      @media #{$xs} {
+        margin-top: 0;
       }
     }
 
@@ -116,6 +146,15 @@
       justify-content: center;
       padding: 0 25px;
     }
+
+    @media #{$xs} {
+      width: 230px;
+      height: 200px;
+      margin: 0 6.5px;
+      flex-direction: column;
+      align-items: center;
+      display: flex!important;
+    }
   }
 
   &__quarter-icon {
@@ -129,6 +168,10 @@
       @media #{$sm} {
         max-height: 100%;
       }
+    }
+
+    @media #{$xs} {
+      height: 50px;
     }
   }
 
@@ -144,6 +187,13 @@
       margin: 0 0 0 25px;
       font-size: 16px;
       line-height: 20px;
+    }
+
+    @media #{$xs} {
+      margin-left: 0;
+      font-size: 18px;
+      line-height: 26px;
+      padding-top: 11px;
     }
 
     &--top_padding {
@@ -175,6 +225,12 @@
       margin: 0 23px;
     }
 
+    @media #{$xs} {
+      width: 330px;
+      height: 170px;
+      margin: 0 4px;
+    }
+
     &:last-child {
       margin-right: 0;
     }
@@ -191,6 +247,10 @@
       width: 50px;
 
     }
+
+    @media #{$xs} {
+      width: 60px;
+    }
   }
 
   &__third-text {
@@ -203,6 +263,11 @@
     @media #{$sm} {
       font-size: 16px;
       line-height: 20px;
+    }
+
+    @media #{$xs} {
+      font-size: 18px;
+      line-height: 22px;
     }
   }
 }

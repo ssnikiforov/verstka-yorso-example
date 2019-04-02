@@ -10,6 +10,26 @@
     margin-top: 58px;
   }
 
+  @media #{$xs} {
+    padding: 118px 0 39px;
+    margin-top: 53px;
+    background: $brand-white url('#{$assets-path}/img/shrimp_bg.svg') no-repeat top left;
+    position: relative;
+  }
+
+  &:before {
+    @media #{$xs} {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 218px;
+      background: linear-gradient(180.22deg, rgba(255, 255, 255, 0.8) 0.28%, rgba(255, 255, 255, 0) 99.61%);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
   &__flex {
     display: flex;
     align-items: center;
@@ -22,6 +42,10 @@
     @media #{$sm} {
       width: 311px;
     }
+
+    @media #{$xs} {
+      display: none;
+    }
   }
 
   &__text {
@@ -31,6 +55,12 @@
     @media #{$sm} {
       padding-left: 0;
       width: 100%;
+    }
+
+    @media #{$xs} {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -45,6 +75,12 @@
       font-size: 36px;
       line-height: 45px;
     }
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 37px;
+      text-align: center;
+    }
   }
 
   &__description {
@@ -58,6 +94,13 @@
       font-size: 18px;
       line-height: 26px;
       margin: 20px 0 30px;
+    }
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 23px;
+      margin: 50px 0;
+      text-align: center;
     }
   }
 }

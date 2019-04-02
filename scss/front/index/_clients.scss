@@ -7,6 +7,10 @@
     margin-top: 60px;
   }
 
+  @media #{$xs} {
+    margin-top: 52px;
+  }
+
   &__flex {
     margin-top: 75px;
     display: flex;
@@ -17,6 +21,14 @@
       margin-top: 60px;
       width: calc(100% + 25px);
       transform: translateX(-12.5px);
+    }
+
+    @media #{$xs} {
+      margin-top: 36px;
+      width: calc(100% + 30px);
+      transform: translateX(-15px);
+      position: relative;
+      padding-bottom: 40px;
     }
   }
 
@@ -33,6 +45,11 @@
       height: 148px;
       padding: 0 15px;
       margin: 0 12.5px;
+    }
+
+    @media #{$xs} {
+      height: 200px;
+      margin: 0 8.5px;
     }
   }
 }

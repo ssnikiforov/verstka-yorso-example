@@ -12,6 +12,25 @@
     padding-top: 10px;
   }
 
+  @media #{$xs} {
+    min-height: 540px;
+    padding-top: 8px;
+    position: relative;
+  }
+
+  &:before {
+    @media #{$xs} {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+    }
+  }
+
   &__form {
     display: flex;
     box-shadow: 0px 2px 4px rgba(35, 35, 35, 0.1), 0px -2px 4px rgba(35, 35, 35, 0.05);
@@ -26,10 +45,25 @@
     border-radius: 5px;
     z-index: 1;
     outline: none;
+    transition: 0.3s;
 
     @media #{$sm} {
       width: 70px;
       height: 40px;
+    }
+
+    @media #{$xs} {
+      height: 50px;
+    }
+
+    &:hover {
+      background: $redesign-index-orange;
+      border-color: $redesign-index-orange;
+
+      img {
+        filter: invert(100%) contrast(200%);
+        -webkit-filter: invert(100%) contrast(200%);
+      }
     }
   }
 
@@ -40,6 +74,10 @@
     @media #{$sm} {
       margin-top: 45px;
       max-width: 352px;
+    }
+
+    @media #{$xs} {
+      margin-top: 65px;
     }
   }
 
@@ -53,6 +91,11 @@
     @media #{$sm} {
       font-size: 36px;
       line-height: 45px;
+    }
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 37px;
     }
   }
 
@@ -68,6 +111,12 @@
       font-size: 18px;
       line-height: 26px;
     }
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 23px;
+      margin-top: 45px 0 0;
+    }
   }
 
   &__buttons {
@@ -77,6 +126,11 @@
     @media #{$sm} {
       margin-top: 40px;
     }
+
+    @media #{$xs} {
+      margin-top: 50px;
+      justify-content: space-between;
+    }
   }
 
   &__buy-button {
@@ -84,6 +138,10 @@
 
     @media #{$sm} {
       margin-right: 25px;
+    }
+
+    @media #{$xs} {
+      margin: 0;
     }
   }
 }

@@ -11,12 +11,20 @@
     padding: 40px 0 55px;
   }
 
+  @media #{$xs} {
+    margin-top: 53px;
+  }
+
   &__wrap {
     max-width: 817px;
     margin: auto;
 
     @media #{$sm} {
       width: 568px;
+    }
+
+    @media #{$xs} {
+      width: 100%;
     }
   }
 
@@ -30,6 +38,11 @@
     @media #{$sm} {
       font-size: 36px;
       line-height: 45px;
+    }
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 37px;
     }
   }
 
@@ -47,6 +60,11 @@
     @media #{$sm} {
       width: 100px;
       height: 40px;
+    }
+
+    @media #{$xs} {
+      width: 120px;
+      height: 50px;
     }
   }
 

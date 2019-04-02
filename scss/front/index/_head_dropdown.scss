@@ -29,6 +29,10 @@
       border-width: 0 15px 15px 15px;
       top: -15px;
     }
+
+    @media #{$xs} {
+      top: -11px;
+    }
   }
 
   &__item {
@@ -47,8 +51,24 @@
       font-family: $GothProB;
     }
 
-    &--top, &:hover {
+    &--top {
       background: $redesign-index-grey;
+
+      &:hover {
+        .head-dropdown__text {
+          color: $redesign-index-black!important;
+        }
+      }
+    }
+
+    &:hover {
+      .head-dropdown__text {
+        color: $redesign-index-orange;
+      }
+
+      .svg-black {
+        fill: $redesign-index-orange;
+      }
     }
 
     &:first-child {
@@ -84,6 +104,7 @@
     font-family: $GothPro;
     line-height: 16px;
     color: $redesign-index-black;
+    transition: 0.3s;
   }
 }
 
